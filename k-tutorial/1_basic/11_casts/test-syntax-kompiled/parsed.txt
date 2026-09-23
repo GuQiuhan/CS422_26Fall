@@ -822,34 +822,14 @@ module STRING-SYNTAX [digest(urIvB5SBek3KkeQOK5p+0560jZezWFn42o/trLm4TBY=), org.
 endmodule
 
 
-module TEST-SYNTAX [digest(U6ODioOJ4twIDZsaaAz0f9Ni9/32flRX/JG4x187ycQ=), org.kframework.attributes.Location(Location(1,1,30,10)), org.kframework.attributes.Source(Source(/Users/gqh/Desktop/CS422/k-tutorial/1_basic/11_casts/test-syntax.k))]
+module TEST-SYNTAX [digest(u1fQoDMVEoQldg5afWp3DKvXpa0J0TkLicfYg1Ke+cs=), org.kframework.attributes.Location(Location(1,1,10,10)), org.kframework.attributes.Source(Source(/Users/gqh/Desktop/CS422/k-tutorial/1_basic/11_casts/test-syntax.k))]
   imports INT-SYNTAX
   imports DEFAULT-CONFIGURATION
   imports BOOL-SYNTAX
-  syntax priority (_)_TEST-SYNTAX_Exp_Exp > -__TEST-SYNTAX_Exp_Exp > _/__TEST-SYNTAX_Exp_Exp_Exp _*__TEST-SYNTAX_Exp_Exp_Exp > _-__TEST-SYNTAX_Exp_Exp_Exp _+__TEST-SYNTAX_Exp_Exp_Exp
-  syntax priority !__TEST-SYNTAX_Exp_Exp > _<=__TEST-SYNTAX_Exp_Exp_Exp _>=__TEST-SYNTAX_Exp_Exp_Exp _<__TEST-SYNTAX_Exp_Exp_Exp _>__TEST-SYNTAX_Exp_Exp_Exp _!=__TEST-SYNTAX_Exp_Exp_Exp _==__TEST-SYNTAX_Exp_Exp_Exp > _&&__TEST-SYNTAX_Exp_Exp_Exp > _^__TEST-SYNTAX_Exp_Exp_Exp > _||__TEST-SYNTAX_Exp_Exp_Exp
-  syntax associativity non-assoc _<=__TEST-SYNTAX_Exp_Exp_Exp _>=__TEST-SYNTAX_Exp_Exp_Exp _<__TEST-SYNTAX_Exp_Exp_Exp _>__TEST-SYNTAX_Exp_Exp_Exp _!=__TEST-SYNTAX_Exp_Exp_Exp _==__TEST-SYNTAX_Exp_Exp_Exp
-  syntax associativity left _/__TEST-SYNTAX_Exp_Exp_Exp _*__TEST-SYNTAX_Exp_Exp_Exp
-  syntax associativity left _-__TEST-SYNTAX_Exp_Exp_Exp _+__TEST-SYNTAX_Exp_Exp_Exp
-  syntax associativity left _&&__TEST-SYNTAX_Exp_Exp_Exp
-  syntax Exp ::= Int [group(atom)]
-  syntax Exp ::= Exp "||" Exp [group(boolor)]
-  syntax Exp ::= Exp "^" Exp [group(boolxor)]
-  syntax Exp ::= Exp ">=" Exp [group(cmp)]
-  syntax Exp ::= Exp ">" Exp [group(cmp)]
-  syntax Exp ::= Exp "==" Exp [group(cmp)]
-  syntax Exp ::= Exp "<=" Exp [group(cmp)]
-  syntax Exp ::= Exp "<" Exp [group(cmp)]
-  syntax Exp ::= Exp "/" Exp [group(mul)]
-  syntax Exp ::= Exp "-" Exp [group(add)]
-  syntax Exp ::= Exp "+" Exp [group(add)]
+  syntax priority x_TEST-SYNTAX_Exp > -__TEST-SYNTAX_Exp_Exp > _*__TEST-SYNTAX_Exp_Exp_Exp
   syntax Exp ::= Exp "*" Exp [group(mul)]
-  syntax Exp ::= Exp "&&" Exp [group(booland)]
-  syntax Exp ::= Exp "!=" Exp [group(cmp)]
-  syntax Exp ::= Bool [group(atom)]
+  syntax Exp ::= "x" [group(atom)]
   syntax Exp ::= "-" Exp [group(neg)]
-  syntax Exp ::= "(" Exp ")" [bracket, bracketLabel((_)_TEST-SYNTAX_Exp_Exp), group(atom)]
-  syntax Exp ::= "!" Exp [group(not)]
 endmodule
 
 

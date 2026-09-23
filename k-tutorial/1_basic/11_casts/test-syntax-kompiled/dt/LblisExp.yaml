@@ -1,7 +1,7 @@
 default: &id001
   action:
-  - 235
-  - - - &id004 ['1']
+  - 106
+  - - - &id002 ['1']
       - STRING.String
 specializations:
 - - kseq{}
@@ -12,25 +12,15 @@ specializations:
         specializations:
         - - inj{SortExp{}, SortKItem{}}
           - action:
-            - 236
+            - 107
             - - - ['0', '0', '1']
                 - STRING.String
           - [STRING.String]
-        - - inj{SortBool{}, SortKItem{}}
-          - &id002
-            action:
-            - 236
-            - - - &id003 ['0', '1']
-                - STRING.String
-          - [BOOL.Bool]
-        - - inj{SortInt{}, SortKItem{}}
-          - *id002
-          - [INT.Int]
         sort: STRING.String
-        occurrence: *id003
+        occurrence: ['0', '1']
       - []
     sort: STRING.String
     occurrence: ['1', '1']
   - [STRING.String, STRING.String]
 sort: STRING.String
-occurrence: *id004
+occurrence: *id002
