@@ -1,0 +1,13 @@
+# Lesson 1.22 commands
+
+```
+kompile lesson-22.k --backend haskell
+
+
+kprove lesson-22-ex1-spec.k    # Exercise 1
+kprove lesson-22-ex2-spec.k    # Exercise 2
+kprove lesson-22-ex3-spec.k    # Exercise 3
+kprove lesson-22-ex4-spec.k    # Exercise 4
+```
+
+All claims are expected to return `#Top`.

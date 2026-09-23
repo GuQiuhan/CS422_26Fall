@@ -1,0 +1,22 @@
+{
+    "sourceFile": "k-tutorial/1_basic/07_side_conditions/lesson-07-ex3-comparisons.k",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1790055620520,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1790112110472,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,28 @@\n+module LESSON-07-EX3-COMPARISONS\n+  imports BOOL\n+  imports INT-SYNTAX\n+  imports IT\n+\n+  syntax Bool ::= myEqualInt(Int, Int) [function]\n+  rule myEqualInt(I, I) => true\n+  rule myEqualInt(_, _) => false [owise]\n+\n+  syntax Bool ::= race(Int, Int, Int) [function]\n+  // race(D, Up, Down): true if D > 0, false if D < 0. Never called with D == 0.\n+  rule race(D, D, _) => true\n+  rule race(D, _, D) => false\n+  rule race(D, Up, Down) => race(D, Up +Int 1, Down -Int 1) [owise]\n+\n+  syntax Bool ::= myLessThanInt(Int, Int) [function]\n+  rule myLessThanInt(I, I) => false\n+  rule myLessThanInt(I1, I2) => race(I2 -Int I1, 0, 0) [owise]\n+\n+  syntax Bool ::= myLessOrEqualInt(Int, Int) [function]\n+  rule myLessOrEqualInt(I1, I2) => myLessThanInt(I1, I2) orBool myEqualInt(I1, I2)\n+\n+  syntax Bool ::= myGreaterThanInt(Int, Int) [function]\n+  rule myGreaterThanInt(I1, I2) => myLessThanInt(I2, I1)\n+\n+  syntax Bool ::= myGreaterOrEqualInt(Int, Int) [function]\n+  rule myGreaterOrEqualInt(I1, I2) => myLessOrEqualInt(I2, I1)\n+endmodule\n"
+                }
+            ],
+            "date": 1790055620520,
+            "name": "Commit-0",
+            "content": "module LESSON-07-EX3-COMPARISONS\n  imports BOOL\n  imports INT-SYNTAX\n\n  syntax Bool ::= myEqualInt(Int, Int) [function]\n  rule myEqualInt(I, I) => true\n  rule myEqualInt(_, _) => false [owise]\n\n  syntax Bool ::= race(Int, Int, Int) [function]\n  // race(D, Up, Down): true if D > 0, false if D < 0. Never called with D == 0.\n  rule race(D, D, _) => true\n  rule race(D, _, D) => false\n  rule race(D, Up, Down) => race(D, Up +Int 1, Down -Int 1) [owise]\n\n  syntax Bool ::= myLessThanInt(Int, Int) [function]\n  rule myLessThanInt(I, I) => false\n  rule myLessThanInt(I1, I2) => race(I2 -Int I1, 0, 0) [owise]\n\n  syntax Bool ::= myLessOrEqualInt(Int, Int) [function]\n  rule myLessOrEqualInt(I1, I2) => myLessThanInt(I1, I2) orBool myEqualInt(I1, I2)\n\n  syntax Bool ::= myGreaterThanInt(Int, Int) [function]\n  rule myGreaterThanInt(I1, I2) => myLessThanInt(I2, I1)\n\n  syntax Bool ::= myGreaterOrEqualInt(Int, Int) [function]\n  rule myGreaterOrEqualInt(I1, I2) => myLessOrEqualInt(I2, I1)\nendmodule\n"
+        }
+    ]
+}

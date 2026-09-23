@@ -1,0 +1,18 @@
+{
+    "sourceFile": "k-tutorial/1_basic/04_disambiguation/lesson-04-b-alt.k",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1790054868256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1790054868256,
+            "name": "Commit-0",
+            "content": "module LESSON-04-B-ALT\n\n  syntax Boolean ::= \"true\" | \"false\"\n                   | \"(\" Boolean \")\" [bracket]\n                   > \"!\" Boolean [function]\n                   > right: Boolean \"&&\" Boolean [function]\n                   > left: Boolean \"^\" Boolean [function]\n                   > left: Boolean \"||\" Boolean [function]\n\nendmodule\n"
+        }
+    ]
+}

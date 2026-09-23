@@ -1,0 +1,18 @@
+{
+    "sourceFile": "k-tutorial/1_basic/07_side_conditions/lesson-07-ex1.k",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1790055624627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1790055624627,
+            "name": "Commit-0",
+            "content": "module LESSON-07-EX1\n  imports BOOL\n  imports INT\n\n  syntax Grade ::= \"letter-A\"\n                 | \"letter-B\"\n                 | \"letter-C\"\n                 | \"letter-D\"\n                 | \"letter-F\"\n                 | gradeFromPercentile(Int) [function]\n\n  rule gradeFromPercentile(I) => letter-A requires I >=Int 90\n  rule gradeFromPercentile(I) => letter-B requires I >=Int 80 andBool I <Int 90\nendmodule\n"
+        }
+    ]
+}

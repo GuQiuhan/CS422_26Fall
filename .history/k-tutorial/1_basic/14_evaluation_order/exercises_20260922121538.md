@@ -1,0 +1,2 @@
+* Exercise 1: Stored in `lesson-14-ex1-div.k`, tested with `ex1-div.exp`
+* Exercise 2: Stored in `lesson-14-ex2-calculator.k`, tested with `ex2-calc.exp`

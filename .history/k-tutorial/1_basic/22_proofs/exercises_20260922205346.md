@@ -1,0 +1,5 @@
+* Exercise 1: Stored in `lesson-22-ex1-spec.k`
+* Exercise 2: Stored in `lesson-22-ex2-spec.k`
+* Exercise 3: Stored in `lesson-22-ex3-spec.k`
+* Exercise 4: Stored in `lesson-22-ex4-spec.k`
+* Commands to run all of the above: `COMMANDS.md`

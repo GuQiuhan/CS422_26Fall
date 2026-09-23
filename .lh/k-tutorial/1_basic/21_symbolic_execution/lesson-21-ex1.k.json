@@ -1,0 +1,18 @@
+{
+    "sourceFile": "k-tutorial/1_basic/21_symbolic_execution/lesson-21-ex1.k",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1790128344816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1790128344816,
+            "name": "Commit-0",
+            "content": "\nmodule LESSON-21-EX1\n    imports INT\n\n    rule <k> 0 => ?X:Int ... </k> ensures ?X =/=Int 0\n    rule <k> X:Int => 5  ... </k> requires X >=Int 10\n    rule <k> X:Int => ?Y:Int ... </k>\n      requires X >Int 10 andBool X %Int 2 =/=Int 0\n      ensures ?Y >Int 0 andBool ?Y <Int 10 andBool ?Y %Int 2 ==Int 0\nendmodule\n"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "sourceFile": "k-tutorial/1_basic/20_backends/COMMANDS.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1790128175994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1790128185804,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,9 @@\n # Lesson 1.20 exercises\n \n-## Exercise 1 (bottom of lesson)\n+## Exercise 1\n \n-Reusing the minilang from Lesson 1.18, Exercise 2\n-(`../18_equality_and_conditionals/lesson-18-ex2-minilang-if.k`):\n+Reusing the minilang from Lesson 1.18, Exercise 2 (`../18_equality_and_conditionals/lesson-18-ex2-minilang-if.k`):\n \n ```\n kompile ../18_equality_and_conditionals/lesson-18-ex2-minilang-if.k \\\n   --main-module LESSON-18-EX2-MINILANG-IF --syntax-module LESSON-18-EX2-MINILANG-IF-SYNTAX \\\n"
+                },
+                {
+                    "date": 1790128290299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,12 +14,4 @@\n   --main-module LESSON-18-EX2-MINILANG-IF --syntax-module LESSON-18-EX2-MINILANG-IF-SYNTAX \\\n   --backend haskell --output-dir minilang-haskell-kompiled\n krun ../18_equality_and_conditionals/minilang-if.pgm --definition minilang-haskell-kompiled\n ```\n-\n-Since this definition is deterministic (every step matches at most one\n-rule for any reachable configuration), both backends should produce the\n-identical final `<T>` configuration. If they ever diverged, the\n-suggested next step would be `krun --search` on the LLVM backend to see\n-whether there is in fact hidden nondeterminism (a configuration matching\n-more than one top-level rule) that the two backends are resolving\n-differently.\n"
+                }
+            ],
+            "date": 1790128175994,
+            "name": "Commit-0",
+            "content": "# Lesson 1.20 exercises\n\n## Exercise 1 (bottom of lesson)\n\nReusing the minilang from Lesson 1.18, Exercise 2\n(`../18_equality_and_conditionals/lesson-18-ex2-minilang-if.k`):\n\n```\nkompile ../18_equality_and_conditionals/lesson-18-ex2-minilang-if.k \\\n  --main-module LESSON-18-EX2-MINILANG-IF --syntax-module LESSON-18-EX2-MINILANG-IF-SYNTAX \\\n  --output-dir minilang-llvm-kompiled\nkrun ../18_equality_and_conditionals/minilang-if.pgm --definition minilang-llvm-kompiled\n\nkompile ../18_equality_and_conditionals/lesson-18-ex2-minilang-if.k \\\n  --main-module LESSON-18-EX2-MINILANG-IF --syntax-module LESSON-18-EX2-MINILANG-IF-SYNTAX \\\n  --backend haskell --output-dir minilang-haskell-kompiled\nkrun ../18_equality_and_conditionals/minilang-if.pgm --definition minilang-haskell-kompiled\n```\n\nSince this definition is deterministic (every step matches at most one\nrule for any reachable configuration), both backends should produce the\nidentical final `<T>` configuration. If they ever diverged, the\nsuggested next step would be `krun --search` on the LLVM backend to see\nwhether there is in fact hidden nondeterminism (a configuration matching\nmore than one top-level rule) that the two backends are resolving\ndifferently.\n"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "sourceFile": "k-tutorial/1_basic/11_casts/lesson-11-ex2.k",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1790093776739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1790111606909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n   syntax Exp ::= Int [group(atom)]\n                | Bool [group(atom)]\n                | \"(\" Exp \")\" [group(atom), bracket]\n-               | \"-\" Exp [group(neg)]\n+               > \"-\" Exp [group(neg)]\n                > left:\n                  Exp \"*\" Exp [group(mul)]\n                | Exp \"/\" Exp [group(mul)]\n                > left:\n@@ -22,10 +22,10 @@\n                | Exp \"==\" Exp [group(cmp)]\n                | Exp \"!=\" Exp [group(cmp)]\n                > left:\n                  Exp \"&&\" Exp [group(booland)]\n-               | Exp \"^\" Exp [group(boolxor)]\n-               | Exp \"||\" Exp [group(boolor)]\n+               > Exp \"^\" Exp [group(boolxor)]\n+               > Exp \"||\" Exp [group(boolor)]\n \n   syntax priority atom > neg > mul > add > not > cmp > booland > boolxor > boolor\n endmodule\n \n"
+                }
+            ],
+            "date": 1790093776739,
+            "name": "Commit-0",
+            "content": "module LESSON-11-EX2-SYNTAX\n  imports INT-SYNTAX\n  imports BOOL-SYNTAX\n\n  syntax Exp ::= Int [group(atom)]\n               | Bool [group(atom)]\n               | \"(\" Exp \")\" [group(atom), bracket]\n               | \"-\" Exp [group(neg)]\n               > left:\n                 Exp \"*\" Exp [group(mul)]\n               | Exp \"/\" Exp [group(mul)]\n               > left:\n                 Exp \"+\" Exp [group(add)]\n               | Exp \"-\" Exp [group(add)]\n\n  syntax Exp ::= \"!\" Exp [group(not)]\n               > non-assoc:\n                 Exp \"<\" Exp [group(cmp)]\n               | Exp \"<=\" Exp [group(cmp)]\n               | Exp \">\" Exp [group(cmp)]\n               | Exp \">=\" Exp [group(cmp)]\n               | Exp \"==\" Exp [group(cmp)]\n               | Exp \"!=\" Exp [group(cmp)]\n               > left:\n                 Exp \"&&\" Exp [group(booland)]\n               | Exp \"^\" Exp [group(boolxor)]\n               | Exp \"||\" Exp [group(boolor)]\n\n  syntax priority atom > neg > mul > add > not > cmp > booland > boolxor > boolor\nendmodule\n\nmodule LESSON-11-EX2\n  imports LESSON-11-EX2-SYNTAX\n  imports INT\n  imports BOOL\n\n  syntax Exp ::= eval(Exp) [function]\n\n  rule eval(I:Int) => I\n  rule eval(B:Bool) => B\n\n  rule eval(- E) => 0 -Int {eval(E)}:>Int\n  rule eval(E1 * E2) => {eval(E1)}:>Int *Int {eval(E2)}:>Int\n  rule eval(E1 / E2) => {eval(E1)}:>Int /Int {eval(E2)}:>Int requires {eval(E2)}:>Int =/=Int 0\n  rule eval(E1 + E2) => {eval(E1)}:>Int +Int {eval(E2)}:>Int\n  rule eval(E1 - E2) => {eval(E1)}:>Int -Int {eval(E2)}:>Int\n\n  rule eval(E1 < E2) => {eval(E1)}:>Int <Int {eval(E2)}:>Int\n  rule eval(E1 <= E2) => {eval(E1)}:>Int <=Int {eval(E2)}:>Int\n  rule eval(E1 > E2) => {eval(E1)}:>Int >Int {eval(E2)}:>Int\n  rule eval(E1 >= E2) => {eval(E1)}:>Int >=Int {eval(E2)}:>Int\n  rule eval(E1 == E2) => {eval(E1)}:>Int ==Int {eval(E2)}:>Int\n  rule eval(E1 != E2) => {eval(E1)}:>Int =/=Int {eval(E2)}:>Int\n\n  rule eval(! E) => notBool {eval(E)}:>Bool\n  rule eval(E1 && E2) => {eval(E1)}:>Bool andBool {eval(E2)}:>Bool\n  rule eval(E1 ^ E2) => {eval(E1)}:>Bool xorBool {eval(E2)}:>Bool\n  rule eval(E1 || E2) => {eval(E1)}:>Bool orBool {eval(E2)}:>Bool\nendmodule\n"
+        }
+    ]
+}

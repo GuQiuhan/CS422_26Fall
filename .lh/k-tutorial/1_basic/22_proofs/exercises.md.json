@@ -1,0 +1,18 @@
+{
+    "sourceFile": "k-tutorial/1_basic/22_proofs/exercises.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1790128426795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1790128426795,
+            "name": "Commit-0",
+            "content": "* Exercise 1: Stored in `lesson-22-ex1-spec.k`\n* Exercise 2: Stored in `lesson-22-ex2-spec.k`\n* Exercise 3: Stored in `lesson-22-ex3-spec.k`\n* Exercise 4: Stored in `lesson-22-ex4-spec.k`\n* Commands to run all of the above: `COMMANDS.md`\n"
+        }
+    ]
+}

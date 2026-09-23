@@ -1,0 +1,18 @@
+{
+    "sourceFile": "k-tutorial/1_basic/10_strings/lesson-10-ex1.k",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1790093694402,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1790093694402,
+            "name": "Commit-0",
+            "content": "module LESSON-10-EX1\n  imports STRING\n  imports BOOL\n\n  syntax String ::= ltrim(String) [function]\n  rule ltrim(S) => ltrim(substrString(S, 1, lengthString(S)))\n    requires lengthString(S) >Int 0 andBool substrString(S, 0, 1) ==String \" \"\n  rule ltrim(S) => S [owise]\n\n  syntax String ::= firstWordOf(String) [function]\n  rule firstWordOf(S) => substrString(S, 0, findString(S, \" \", 0))\n    requires findString(S, \" \", 0) >=Int 0\n  rule firstWordOf(S) => S [owise]\n\n  syntax String ::= firstWords(String) [function]\n  rule firstWords(P) => \"\"\n    requires findString(P, \".\", 0) <Int 0\n  rule firstWords(P) =>\n       firstWordOf(substrString(P, 0, findString(P, \".\", 0)))\n       +String \".\"\n       +String firstWords(ltrim(substrString(P, findString(P, \".\", 0) +Int 1, lengthString(P))))\n    requires findString(P, \".\", 0) >=Int 0\nendmodule\n"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "sourceFile": "k-tutorial/1_basic/19_debugging/COMMANDS.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1790128082330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1790128106397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,10 +16,9 @@\n ```\n (lldb) breakpoint set --name LESSON-19-EX1-MINILANG-IF-DEBUG.is-int.rhs\n (lldb) run\n ```\n-This stops the first time `isKResult` is checked against an `Int` (e.g. right after `5` is heated for `x = 5;`). The substitution shown is the\n-argument passed to `isKResult`.\n+This stops the first time `isKResult` is checked against an `Int` (e.g. right after `5` is heated for `x = 5;`). The substitution shown is the argument passed to `isKResult`.\n \n ## 2. Breakpoint on the addition rule, run until hit\n \n GDB:\n@@ -49,8 +48,5 @@\n does not match pattern:\n _ - _\n ```\n \n-This is because the top symbol of the current term is `+`\n-(`Exp \"+\" Exp`), while the `[subtraction]` rule's pattern is rooted at\n-the different constructor `Exp \"-\" Exp` -- the two productions are\n-distinct, so no amount of matching on the operands can make them equal.\n+This is because the top symbol of the current term is `+` (`Exp \"+\" Exp`), while the `[subtraction]` rule's pattern is rooted at the different constructor `Exp \"-\" Exp` -- the two productions are distinct, so no amount of matching on the operands can make them equal.\n"
+                },
+                {
+                    "date": 1790128245488,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n (gdb) k step        # repeat, or `k step N`, until <k> shows `5 + 3 ~> ...`\n (gdb) k match LESSON-19-EX1-MINILANG-IF-DEBUG.subtraction subject\n ```\n \n-Expected output (to put it simply):\n+Output (to put it simply):\n ```\n Subject:\n 5 + 3\n does not match pattern:\n"
+                },
+                {
+                    "date": 1790128267848,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,5 +48,5 @@\n does not match pattern:\n _ - _\n ```\n \n-This is because the top symbol of the current term is `+` (`Exp \"+\" Exp`), while the `[subtraction]` rule's pattern is rooted at the different constructor `Exp \"-\" Exp` -- the two productions are distinct, so no amount of matching on the operands can make them equal.\n+This is because the top symbol of the current term is `+` (`Exp \"+\" Exp`), while the `[subtraction]` rule's pattern is rooted at the different constructor `Exp \"-\" Exp`. Therefore the two productions are distinct, so no amount of matching on the operands can make them equal.\n"
+                },
+                {
+                    "date": 1790192158827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,15 +30,15 @@\n ```\n (lldb) breakpoint set --name LESSON-19-EX1-MINILANG-IF-DEBUG.addition.rhs\n (lldb) run\n ```\n-This stops when `x + 3` (both operands already `Int`) is about to be rewritten by the `[addition]` rule -- i.e. `y = x + 3;` after `x` has been looked up to `5`.\n+This stops when `x + 3` (both operands already `Int`) is about to be rewritten by the `[addition]` rule, i.e., `y = x + 3;` after `x` has been looked up to `5`.\n \n ## 3. Step until `+` is at the top of `<k>`, then `k match` the subtraction rule\n \n ```\n (gdb) k start\n-(gdb) k step        # repeat, or `k step N`, until <k> shows `5 + 3 ~> ...`\n+(gdb) k step       \n (gdb) k match LESSON-19-EX1-MINILANG-IF-DEBUG.subtraction subject\n ```\n \n Output (to put it simply):\n"
+                }
+            ],
+            "date": 1790128082330,
+            "name": "Commit-0",
+            "content": "# Exercise 1: GDB/LLDB walkthrough\n\n```\nkompile lesson-19-ex1-minilang-if-debug.k --enable-llvm-debug\nkrun minilang-if-debug.pgm --debugger\n```\n\n## 1. Breakpoint on `isKResult`, observe state\n\nGDB:\n```\n(gdb) break LESSON-19-EX1-MINILANG-IF-DEBUG.is-int.rhs\n(gdb) run\n```\nLLDB:\n```\n(lldb) breakpoint set --name LESSON-19-EX1-MINILANG-IF-DEBUG.is-int.rhs\n(lldb) run\n```\nThis stops the first time `isKResult` is checked against an `Int` (e.g. right after `5` is heated for `x = 5;`). The substitution shown is the\nargument passed to `isKResult`.\n\n## 2. Breakpoint on the addition rule, run until hit\n\nGDB:\n```\n(gdb) break LESSON-19-EX1-MINILANG-IF-DEBUG.addition.rhs\n(gdb) run\n```\nLLDB:\n```\n(lldb) breakpoint set --name LESSON-19-EX1-MINILANG-IF-DEBUG.addition.rhs\n(lldb) run\n```\nThis stops when `x + 3` (both operands already `Int`) is about to be rewritten by the `[addition]` rule -- i.e. `y = x + 3;` after `x` has been looked up to `5`.\n\n## 3. Step until `+` is at the top of `<k>`, then `k match` the subtraction rule\n\n```\n(gdb) k start\n(gdb) k step        # repeat, or `k step N`, until <k> shows `5 + 3 ~> ...`\n(gdb) k match LESSON-19-EX1-MINILANG-IF-DEBUG.subtraction subject\n```\n\nExpected output (to put it simply):\n```\nSubject:\n5 + 3\ndoes not match pattern:\n_ - _\n```\n\nThis is because the top symbol of the current term is `+`\n(`Exp \"+\" Exp`), while the `[subtraction]` rule's pattern is rooted at\nthe different constructor `Exp \"-\" Exp` -- the two productions are\ndistinct, so no amount of matching on the operands can make them equal.\n"
+        }
+    ]
+}

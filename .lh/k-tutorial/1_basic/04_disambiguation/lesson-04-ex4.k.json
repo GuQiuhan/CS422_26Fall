@@ -1,0 +1,18 @@
+{
+    "sourceFile": "k-tutorial/1_basic/04_disambiguation/lesson-04-ex4.k",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1790054884673,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1790054884673,
+            "name": "Commit-0",
+            "content": "\nmodule EXERCISE4\n\n  syntax Expr ::= \"a\" Expr \"b\"\n                | \"a\" \"b\" \"b\"\n                | \"b\"\n\nendmodule\n"
+        }
+    ]
+}

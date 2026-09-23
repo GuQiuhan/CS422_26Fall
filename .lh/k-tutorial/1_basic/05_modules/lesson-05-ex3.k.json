@@ -1,0 +1,18 @@
+{
+    "sourceFile": "k-tutorial/1_basic/05_modules/lesson-05-ex3.k",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1790055391588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1790055391588,
+            "name": "Commit-0",
+            "content": "requires \"lesson-05-ex2-syntax.k\"\n\nmodule LESSON-05-EX3\n  imports LESSON-05-EX2-SYNTAX\n\n  rule colorOf(Banana()) => Yellow()\n  rule colorOf(Blueberry()) => Blue()\n  rule colorOf(Kiwi()) => Green()\n  rule colorOf(Blackberry()) => Black()\nendmodule\n"
+        }
+    ]
+}

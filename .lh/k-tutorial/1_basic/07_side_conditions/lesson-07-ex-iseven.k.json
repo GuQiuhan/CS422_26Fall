@@ -1,0 +1,18 @@
+{
+    "sourceFile": "k-tutorial/1_basic/07_side_conditions/lesson-07-ex-iseven.k",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1790055626138,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1790055626138,
+            "name": "Commit-0",
+            "content": "module LESSON-07-EX-ISEVEN\n  imports BOOL\n  imports INT\n\n  syntax Bool ::= isEven(Int) [function]\n\n  rule isEven(I) => true requires I %Int 2 ==Int 0\n  rule isEven(I) => false requires I %Int 2 =/=Int 0\nendmodule\n"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "sourceFile": "k-tutorial/1_basic/09_unparsing/lesson-09-ex2-calculator.k",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1790093676955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1790111971628,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,17 +3,17 @@\n   imports BOOL-SYNTAX\n \n   syntax Exp ::= Int [group(atom)]\n                | \"(\" Exp \")\" [group(atom), bracket, format(%1%2%3)]\n-               | \"-\" Exp [group(neg), function, format(%1%2), color(yellow)]\n+               > \"-\" Exp [group(neg), function, format(%1%2), color(yellow)]\n                > left:\n                  Exp \"*\" Exp [group(mul), function, format(%1 %2 %3), color(yellow)]\n                | Exp \"/\" Exp [group(mul), function, format(%1 %2 %3), color(yellow)]\n                > left:\n                  Exp \"+\" Exp [group(add), function, format(%1 %2 %3), color(yellow)]\n                | Exp \"-\" Exp [group(add), function, format(%1 %2 %3), color(yellow)]\n \n-  syntax priority atom > neg > mul > add\n+  //syntax priority atom > neg > mul > add\n \n   syntax Bool ::= \"(\" Bool \")\" [bracket, format(%1%2%3)]\n                 > \"!\" Bool [function, format(%1%2), color(green)]\n                 > non-assoc:\n"
+                }
+            ],
+            "date": 1790093676955,
+            "name": "Commit-0",
+            "content": "module LESSON-09-EX2-CALCULATOR-SYNTAX\n  imports INT-SYNTAX\n  imports BOOL-SYNTAX\n\n  syntax Exp ::= Int [group(atom)]\n               | \"(\" Exp \")\" [group(atom), bracket, format(%1%2%3)]\n               | \"-\" Exp [group(neg), function, format(%1%2), color(yellow)]\n               > left:\n                 Exp \"*\" Exp [group(mul), function, format(%1 %2 %3), color(yellow)]\n               | Exp \"/\" Exp [group(mul), function, format(%1 %2 %3), color(yellow)]\n               > left:\n                 Exp \"+\" Exp [group(add), function, format(%1 %2 %3), color(yellow)]\n               | Exp \"-\" Exp [group(add), function, format(%1 %2 %3), color(yellow)]\n\n  syntax priority atom > neg > mul > add\n\n  syntax Bool ::= \"(\" Bool \")\" [bracket, format(%1%2%3)]\n                > \"!\" Bool [function, format(%1%2), color(green)]\n                > non-assoc:\n                  Exp \"<\" Exp [function, format(%1 %2 %3), color(magenta)]\n                | Exp \"<=\" Exp [function, format(%1 %2 %3), color(magenta)]\n                | Exp \">\" Exp [function, format(%1 %2 %3), color(magenta)]\n                | Exp \">=\" Exp [function, format(%1 %2 %3), color(magenta)]\n                | Exp \"==\" Exp [function, format(%1 %2 %3), color(magenta)]\n                | Exp \"!=\" Exp [function, format(%1 %2 %3), color(magenta)]\n                > left:\n                  Bool \"&&\" Bool [function, format(%1 %2 %3), color(green)]\n                | Bool \"^\" Bool [function, format(%1 %2 %3), color(green)]\n                | Bool \"||\" Bool [function, format(%1 %2 %3), color(green)]\nendmodule\n\nmodule LESSON-09-EX2-CALCULATOR\n  imports LESSON-09-EX2-CALCULATOR-SYNTAX\n  imports INT\n  imports BOOL\n\n  rule - I => 0 -Int I\n  rule I1 * I2 => I1 *Int I2\n  rule I1 / I2 => I1 /Int I2 requires I2 =/=Int 0\n  rule I1 + I2 => I1 +Int I2\n  rule I1 - I2 => I1 -Int I2\n\n  rule I1 < I2 => I1 <Int I2\n  rule I1 <= I2 => I1 <=Int I2\n  rule I1 > I2 => I1 >Int I2\n  rule I1 >= I2 => I1 >=Int I2\n  rule I1 == I2 => I1 ==Int I2\n  rule I1 != I2 => I1 =/=Int I2\n\n  rule ! B => notBool B\n  rule B1 && B2 => B1 andBool B2\n  rule B1 ^ B2 => B1 xorBool B2\n  rule B1 || B2 => B1 orBool B2\nendmodule\n"
+        }
+    ]
+}

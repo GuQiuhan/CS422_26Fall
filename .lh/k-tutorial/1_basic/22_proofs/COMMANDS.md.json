@@ -1,0 +1,22 @@
+{
+    "sourceFile": "k-tutorial/1_basic/22_proofs/COMMANDS.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1790128437671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1790128446400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n \n ```\n kompile lesson-22.k --backend haskell\n \n-kprove lesson-22-spec.k        # body walkthrough (claims 3.1-3.5)\n \n kprove lesson-22-ex1-spec.k    # Exercise 1\n kprove lesson-22-ex2-spec.k    # Exercise 2\n kprove lesson-22-ex3-spec.k    # Exercise 3\n"
+                }
+            ],
+            "date": 1790128437671,
+            "name": "Commit-0",
+            "content": "# Lesson 1.22 commands\n\n```\nkompile lesson-22.k --backend haskell\n\nkprove lesson-22-spec.k        # body walkthrough (claims 3.1-3.5)\n\nkprove lesson-22-ex1-spec.k    # Exercise 1\nkprove lesson-22-ex2-spec.k    # Exercise 2\nkprove lesson-22-ex3-spec.k    # Exercise 3\nkprove lesson-22-ex4-spec.k    # Exercise 4\n```\n\nAll claims are expected to return `#Top`.\n"
+        }
+    ]
+}

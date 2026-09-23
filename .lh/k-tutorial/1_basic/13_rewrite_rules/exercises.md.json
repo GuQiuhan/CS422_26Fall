@@ -1,0 +1,18 @@
+{
+    "sourceFile": "k-tutorial/1_basic/13_rewrite_rules/exercises.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1790096932154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1790096932154,
+            "name": "Commit-0",
+            "content": "* Exercise 1: Stored in `lesson-13-ex1-sub.k`, tested with `ex1-sub.exp`\n"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "k-tutorial/1_basic/04_disambiguation/lesson-04-ex2-explicit.k",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1790054825607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1790054825606,
+            "name": "Commit-0",
+            "content": "module LESSON-04-EX2-EXPLICIT\n\n  syntax Int ::= r\"[0-9]+\" [token]\n\n  syntax Exp ::= Int [group(atom)]\n               | \"(\" Exp \")\" [group(atom), bracket]\n               | \"-\" Exp [group(neg)]\n               | Exp \"*\" Exp [group(mul)]\n               | Exp \"/\" Exp [group(mul)]\n               | Exp \"+\" Exp [group(add)]\n               | Exp \"-\" Exp [group(add)]\n\n  syntax priority atom > neg > mul > add\n  syntax left mul\n  syntax left add\n\nendmodule\n"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "k-tutorial/1_basic/04_disambiguation/lesson-04-ex2-inline.k",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1790054831460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1790054831460,
+            "name": "Commit-0",
+            "content": "module LESSON-04-EX2-INLINE\n\n  syntax Int ::= r\"[0-9]+\" [token]\n\n  syntax Exp ::= Int\n               | \"(\" Exp \")\" [bracket]\n               > \"-\" Exp\n               > left:\n                 Exp \"*\" Exp\n               | Exp \"/\" Exp\n               > left:\n                 Exp \"+\" Exp\n               | Exp \"-\" Exp\n\nendmodule\n"
+        }
+    ]
+}

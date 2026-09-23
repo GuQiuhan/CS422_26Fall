@@ -1,0 +1,18 @@
+{
+    "sourceFile": "k-tutorial/1_basic/03_parsing/lesson-03-a.k",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1789667902650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1789667902650,
+            "name": "Commit-0",
+            "content": "module LESSON-03-A\n\n  syntax Boolean ::= \"true\" | \"false\"\n                   | \"!\" Boolean [function]\n                   | Boolean \"&&\" Boolean [function]\n                   | Boolean \"^\" Boolean [function]\n                   | Boolean \"||\" Boolean [function]\n\nendmodule"
+        }
+    ]
+}

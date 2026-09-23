@@ -1,0 +1,18 @@
+{
+    "sourceFile": "k-tutorial/1_basic/05_modules/colorOf-renamed.k",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1790055412533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1790055412533,
+            "name": "Commit-0",
+            "content": "requires \"fruits.k\"\nrequires \"colors.k\"\n\nmodule COLOROF-SYNTAX\n  imports COLORS\n  imports FRUITS\n\n  syntax Color ::= colorOf(Fruit) [function]\nendmodule\n\nmodule COLOROF-MAIN\n  imports COLOROF-SYNTAX\n\n  rule colorOf(Banana()) => Yellow()\n  rule colorOf(Blueberry()) => Blue()\nendmodule\n"
+        }
+    ]
+}

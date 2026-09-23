@@ -1,0 +1,18 @@
+{
+    "sourceFile": "k-tutorial/1_basic/22_proofs/lesson-22-ex2-spec.k",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1790192188284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1790192188284,
+            "name": "Commit-0",
+            "content": "\nrequires \"lesson-22.k\"\nrequires \"domains.md\"\n\nmodule LESSON-22-EX2-SPEC-SYNTAX\n    imports LESSON-22-SYNTAX\n\n    syntax Id ::= \"$a\" [token]\n                | \"$b\" [token]\n                | \"$c\" [token]\nendmodule\n\nmodule LESSON-22-EX2-VERIFICATION\n    imports K-EQUAL\n    imports LESSON-22-EX2-SPEC-SYNTAX\n    imports LESSON-22\n    imports MAP-SYMBOLIC\n\n    rule { M:Map [ K <- V ] #Equals M [ K <- V' ] } => { V #Equals V' } [simplification]\n\n    // The meaning of maxInt(A, B): it equals B when A < B, and A otherwise.\n    rule maxInt(A:Int, B:Int) => B requires A <Int B [simplification]\n    rule maxInt(A:Int, B:Int) => A requires A >=Int B [simplification]\nendmodule\n\nmodule LESSON-22-EX2-SPEC\n    imports LESSON-22-EX2-VERIFICATION\n\n    claim <k> $a = A:Int ; $b = B:Int ;\n              if ($a < $b) {\n                $c = $b ;\n              } else {\n                $c = $a ;\n              }\n            => . ... </k>\n            <store> STORE => STORE [ $a <- A ] [ $b <- B ] [ $c <- ?C:Int ] </store>\n        ensures ?C ==Int maxInt(A, B)\nendmodule\n"
+        }
+    ]
+}

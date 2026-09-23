@@ -1,0 +1,18 @@
+{
+    "sourceFile": "k-tutorial/1_basic/05_modules/lesson-05-ex1.k",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1790055384754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1790055384754,
+            "name": "Commit-0",
+            "content": "module LESSON-05-EX1-ATOM\n  syntax Int ::= r\"[0-9]+\" [token]\n  syntax Exp ::= Int [group(atom)]\n               | \"(\" Exp \")\" [group(atom), bracket]\nendmodule\n\nmodule LESSON-05-EX1-ADD\n  imports LESSON-05-EX1-ATOM\n\n  syntax Exp ::= \"-\" Exp [group(neg)]\n               | Exp \"+\" Exp [group(add)]\n               | Exp \"-\" Exp [group(add)]\nendmodule\n\nmodule LESSON-05-EX1-MUL\n  imports LESSON-05-EX1-ATOM\n\n  syntax Exp ::= Exp \"*\" Exp [group(mul)]\n               | Exp \"/\" Exp [group(mul)]\nendmodule\n\nmodule LESSON-05-EX1\n  imports LESSON-05-EX1-ADD\n  imports LESSON-05-EX1-MUL\n\n  syntax priority atom > neg > mul > add\n  syntax left mul\n  syntax left add\nendmodule\n"
+        }
+    ]
+}

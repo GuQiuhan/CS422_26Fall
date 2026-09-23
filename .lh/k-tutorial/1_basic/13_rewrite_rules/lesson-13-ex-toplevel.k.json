@@ -1,0 +1,22 @@
+{
+    "sourceFile": "k-tutorial/1_basic/13_rewrite_rules/lesson-13-ex-toplevel.k",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1790096941347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1790096950086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,14 @@\n \n+module LESSON-13-EX-TOPLEVEL\n   imports INT\n   imports BOOL\n \n   syntax Exp ::= Int | Bool | Exp \"+\" Exp | Exp \"&&\" Exp\n \n-  // Two nondeterministic top-level rules: on `I1 + I2`, we may keep\n-  // either the left or the right operand.\n+\n   rule <k> I1:Int + _I2:Int => I1 ...</k>\n   rule <k> _I1:Int + I2:Int => I2 ...</k>\n \n-  // A third rule that further rewrites one of the two possible results\n-  // (whichever one happens to be `1`) -- a concrete literal, so it fires\n-  // exactly once and does not loop.\n+\n   rule <k> 1 => 100 ...</k>\n endmodule\n"
+                }
+            ],
+            "date": 1790096941347,
+            "name": "Commit-0",
+            "content": "\n  imports INT\n  imports BOOL\n\n  syntax Exp ::= Int | Bool | Exp \"+\" Exp | Exp \"&&\" Exp\n\n  // Two nondeterministic top-level rules: on `I1 + I2`, we may keep\n  // either the left or the right operand.\n  rule <k> I1:Int + _I2:Int => I1 ...</k>\n  rule <k> _I1:Int + I2:Int => I2 ...</k>\n\n  // A third rule that further rewrites one of the two possible results\n  // (whichever one happens to be `1`) -- a concrete literal, so it fires\n  // exactly once and does not loop.\n  rule <k> 1 => 100 ...</k>\nendmodule\n"
+        }
+    ]
+}

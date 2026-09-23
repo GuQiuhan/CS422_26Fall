@@ -1,0 +1,18 @@
+{
+    "sourceFile": "k-tutorial/1_basic/13_rewrite_rules/lesson-13-c.k",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1790098052400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1790098052400,
+            "name": "Commit-0",
+            "content": "module LESSON-13-C-SYNTAX\n  imports UNSIGNED-INT-SYNTAX\n  imports BOOL-SYNTAX\n\n  syntax Val ::= Int | Bool\n  syntax Exp ::= Val\n               > left: Exp \"+\" Exp\n               > left: Exp \"&&\" Exp\nendmodule\n\nmodule LESSON-13-C\n  imports LESSON-13-C-SYNTAX\n  imports INT\n  imports BOOL\n\n  rule <k> I1:Int + I2:Int => I1 +Int I2 ...</k>\n  rule <k> B1:Bool && B2:Bool => B1 andBool B2 ...</k>\n\n  syntax KItem ::= freezer1(Val) | freezer2(Exp)\n                 | freezer3(Val) | freezer4(Exp)\n\n  rule <k> E1:Val + E2:Exp => E2 ~> freezer1(E1) ...</k> [priority(51)]\n  rule <k> E1:Exp + E2:Exp => E1 ~> freezer2(E2) ...</k> [priority(52)]\n  rule <k> E1:Val && E2:Exp => E2 ~> freezer3(E1) ...</k> [priority(51)]\n  rule <k> E1:Exp && E2:Exp => E1 ~> freezer4(E2) ...</k> [priority(52)]\n\n  rule <k> E2:Val ~> freezer1(E1) => E1 + E2 ...</k>\n  rule <k> E1:Val ~> freezer2(E2) => E1 + E2 ...</k>\n  rule <k> E2:Val ~> freezer3(E1) => E1 && E2 ...</k>\n  rule <k> E1:Val ~> freezer4(E2) => E1 && E2 ...</k>\nendmodule\n"
+        }
+    ]
+}

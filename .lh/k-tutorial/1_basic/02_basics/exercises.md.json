@@ -1,0 +1,18 @@
+{
+    "sourceFile": "k-tutorial/1_basic/02_basics/exercises.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1789667546488,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1789667546488,
+            "name": "Commit-0",
+            "content": "* Exercise 1: Stored in `lesson-02-d.k`\n* Exercise 2: Stored in `lesson-02-f.k`"
+        }
+    ]
+}
