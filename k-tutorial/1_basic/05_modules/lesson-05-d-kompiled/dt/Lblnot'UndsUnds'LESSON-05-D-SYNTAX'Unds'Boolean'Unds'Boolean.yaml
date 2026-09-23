@@ -1,0 +1,14 @@
+default: null
+specializations:
+- - Lblfalse'Unds'LESSON-05-D-SYNTAX'Unds'Boolean{}
+  - action:
+    - 128
+    - []
+  - []
+- - Lbltrue'Unds'LESSON-05-D-SYNTAX'Unds'Boolean{}
+  - action:
+    - 129
+    - []
+  - []
+sort: STRING.String
+occurrence: ['1']

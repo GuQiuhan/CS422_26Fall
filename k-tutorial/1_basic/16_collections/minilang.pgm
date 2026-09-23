@@ -1,0 +1,12 @@
+fun helper() {
+  int x;
+  x = 42;
+  return x;
+}
+fun main() {
+  int a;
+  int x;
+  x = 5;
+  a = helper();
+  return a;
+}

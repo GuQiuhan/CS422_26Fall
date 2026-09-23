@@ -1,0 +1,50 @@
+default: null
+specializations:
+- - Lbl'-LT-'generatedTop'-GT-'{}
+  - default: null
+    specializations:
+    - - Lbl'-LT-'k'-GT-'{}
+      - default: fail
+        specializations:
+        - - kseq{}
+          - default: fail
+            specializations:
+            - - kseq{}
+              - default: fail
+                specializations:
+                - - Lblfreezer1'LParUndsRParUnds'LESSON-13-EX1-SUB'Unds'KItem'Unds'Val{}
+                  - default: fail
+                    specializations:
+                    - - inj{SortBool{}, SortKItem{}}
+                      - &id001
+                        action:
+                        - 174
+                        - - - ['1', '1']
+                            - STRING.String
+                          - - ['1', '1', '0', '0', '1']
+                            - STRING.String
+                          - - ['0', '0', '1', '0', '0', '1']
+                            - STRING.String
+                          - - ['0', '0', '0', '1']
+                            - STRING.String
+                      - [BOOL.Bool]
+                    - - inj{SortInt{}, SortKItem{}}
+                      - *id001
+                      - [INT.Int]
+                    sort: STRING.String
+                    occurrence: ['0', '0', '0', '1']
+                  - [STRING.String]
+                sort: STRING.String
+                occurrence: ['0', '1', '0', '0', '1']
+              - [STRING.String, STRING.String]
+            sort: STRING.String
+            occurrence: ['1', '0', '0', '1']
+          - [STRING.String, STRING.String]
+        sort: STRING.String
+        occurrence: ['0', '0', '1']
+      - [STRING.String]
+    sort: STRING.String
+    occurrence: ['0', '1']
+  - [STRING.String, STRING.String]
+sort: STRING.String
+occurrence: ['1']

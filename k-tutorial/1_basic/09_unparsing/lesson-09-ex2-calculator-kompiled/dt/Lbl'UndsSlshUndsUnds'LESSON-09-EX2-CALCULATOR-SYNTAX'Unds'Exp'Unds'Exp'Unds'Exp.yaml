@@ -1,0 +1,35 @@
+default: null
+specializations:
+- - inj{SortInt{}, SortExp{}}
+  - default: null
+    specializations:
+    - - inj{SortInt{}, SortExp{}}
+      - args:
+        - - &id001 ['0', '2']
+          - INT.Int
+        next:
+          default: null
+          specializations:
+          - - '1'
+            - action:
+              - 128
+              - - - ['0', '1']
+                  - INT.Int
+                - - *id001
+                  - INT.Int
+            - []
+          - - '0'
+            - fail
+            - []
+          bitwidth: 1
+          sort: BOOL.Bool
+          occurrence: &id002 [side_condition_128]
+        function: side_condition_128
+        sort: BOOL.Bool
+        occurrence: *id002
+      - [INT.Int]
+    sort: STRING.String
+    occurrence: ['1']
+  - [INT.Int]
+sort: STRING.String
+occurrence: ['2']

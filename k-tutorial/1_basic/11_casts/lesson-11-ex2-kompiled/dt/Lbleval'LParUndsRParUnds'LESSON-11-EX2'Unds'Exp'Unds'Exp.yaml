@@ -1,0 +1,153 @@
+default: null
+specializations:
+- - inj{SortBool{}, SortExp{}}
+  - action:
+    - 288
+    - - - &id001 ['1']
+        - STRING.String
+      - - ['0', '1']
+        - BOOL.Bool
+  - [BOOL.Bool]
+- - inj{SortInt{}, SortExp{}}
+  - action:
+    - 289
+    - - - *id001
+        - STRING.String
+      - - ['0', '1']
+        - INT.Int
+  - [INT.Int]
+- - Lbl'BangUndsUnds'LESSON-11-EX2-SYNTAX'Unds'Exp'Unds'Exp{}
+  - action:
+    - 290
+    - - - ['0', '1']
+        - STRING.String
+  - [STRING.String]
+- - Lbl-'UndsUnds'LESSON-11-EX2-SYNTAX'Unds'Exp'Unds'Exp{}
+  - action:
+    - 291
+    - - - ['0', '1']
+        - STRING.String
+  - [STRING.String]
+- - Lbl'UndsBangEqlsUndsUnds'LESSON-11-EX2-SYNTAX'Unds'Exp'Unds'Exp'Unds'Exp{}
+  - action:
+    - 292
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+  - [STRING.String, STRING.String]
+- - Lbl'UndsAnd-And-UndsUnds'LESSON-11-EX2-SYNTAX'Unds'Exp'Unds'Exp'Unds'Exp{}
+  - action:
+    - 293
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+  - [STRING.String, STRING.String]
+- - Lbl'UndsStarUndsUnds'LESSON-11-EX2-SYNTAX'Unds'Exp'Unds'Exp'Unds'Exp{}
+  - action:
+    - 294
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+  - [STRING.String, STRING.String]
+- - Lbl'UndsPlusUndsUnds'LESSON-11-EX2-SYNTAX'Unds'Exp'Unds'Exp'Unds'Exp{}
+  - action:
+    - 295
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+  - [STRING.String, STRING.String]
+- - Lbl'Unds'-'UndsUnds'LESSON-11-EX2-SYNTAX'Unds'Exp'Unds'Exp'Unds'Exp{}
+  - action:
+    - 296
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+  - [STRING.String, STRING.String]
+- - Lbl'UndsSlshUndsUnds'LESSON-11-EX2-SYNTAX'Unds'Exp'Unds'Exp'Unds'Exp{}
+  - args:
+    - - &id002 ['1', '1']
+      - STRING.String
+    next:
+      default: null
+      specializations:
+      - - '1'
+        - action:
+          - 297
+          - - - ['0', '1']
+              - STRING.String
+            - - *id002
+              - STRING.String
+        - []
+      - - '0'
+        - fail
+        - []
+      bitwidth: 1
+      sort: BOOL.Bool
+      occurrence: &id003 [side_condition_297]
+    function: side_condition_297
+    sort: BOOL.Bool
+    occurrence: *id003
+  - [STRING.String, STRING.String]
+- - Lbl'Unds-LT-EqlsUndsUnds'LESSON-11-EX2-SYNTAX'Unds'Exp'Unds'Exp'Unds'Exp{}
+  - action:
+    - 298
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+  - [STRING.String, STRING.String]
+- - Lbl'Unds-LT-UndsUnds'LESSON-11-EX2-SYNTAX'Unds'Exp'Unds'Exp'Unds'Exp{}
+  - action:
+    - 299
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+  - [STRING.String, STRING.String]
+- - Lbl'UndsEqlsEqlsUndsUnds'LESSON-11-EX2-SYNTAX'Unds'Exp'Unds'Exp'Unds'Exp{}
+  - action:
+    - 300
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+  - [STRING.String, STRING.String]
+- - Lbl'Unds-GT-EqlsUndsUnds'LESSON-11-EX2-SYNTAX'Unds'Exp'Unds'Exp'Unds'Exp{}
+  - action:
+    - 301
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+  - [STRING.String, STRING.String]
+- - Lbl'Unds-GT-UndsUnds'LESSON-11-EX2-SYNTAX'Unds'Exp'Unds'Exp'Unds'Exp{}
+  - action:
+    - 302
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+  - [STRING.String, STRING.String]
+- - Lbl'UndsXor-UndsUnds'LESSON-11-EX2-SYNTAX'Unds'Exp'Unds'Exp'Unds'Exp{}
+  - action:
+    - 303
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+  - [STRING.String, STRING.String]
+- - Lbl'UndsPipePipeUndsUnds'LESSON-11-EX2-SYNTAX'Unds'Exp'Unds'Exp'Unds'Exp{}
+  - action:
+    - 304
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+  - [STRING.String, STRING.String]
+sort: STRING.String
+occurrence: *id001

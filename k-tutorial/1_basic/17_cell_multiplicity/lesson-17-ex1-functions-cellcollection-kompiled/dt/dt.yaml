@@ -1,0 +1,899 @@
+default: null
+specializations:
+- - Lbl'-LT-'generatedTop'-GT-'{}
+  - default: null
+    specializations:
+    - - Lbl'-LT-'T'-GT-'{}
+      - default: null
+        specializations:
+        - - Lbl'-LT-'k'-GT-'{}
+          - default: fail
+            specializations:
+            - - kseq{}
+              - default: fail
+                specializations:
+                - - inj{SortDecl{}, SortKItem{}}
+                  - default: null
+                    specializations:
+                    - - Lblfun'UndsLParRParLBraUndsRBraUnds'LESSON-17-EX1-FUNCTIONS-CELLCOLLECTION-SYNTAX'Unds'Decl'Unds'Id'Unds'Decls{}
+                      - default: null
+                        specializations:
+                        - - Lbl'-LT-'functions'-GT-'{}
+                          - action:
+                            - 236
+                            - - - &id001 ['1', '1']
+                                - STRING.String
+                              - - &id002 ['1', '0', '0', '0', '1']
+                                - STRING.String
+                              - - ['0', '1', '0', '1']
+                                - MAP.Map
+                              - - &id005 ['2', '0', '1']
+                                - STRING.String
+                              - - &id004 ['3', '0', '1']
+                                - STRING.String
+                              - - ['1', '0', '0', '0', '0', '0', '1']
+                                - STRING.String
+                              - - ['0', '0', '0', '0', '0', '0', '1']
+                                - STRING.String
+                          - [MAP.Map]
+                        sort: STRING.String
+                        occurrence: &id003 ['1', '0', '1']
+                      - [STRING.String, STRING.String]
+                    - - Lblint'UndsSClnUnds'LESSON-17-EX1-FUNCTIONS-CELLCOLLECTION-SYNTAX'Unds'Decl'Unds'Id{}
+                      - default: null
+                        specializations:
+                        - - Lbl'-LT-'state'-GT-'{}
+                          - action:
+                            - 237
+                            - - - *id001
+                                - STRING.String
+                              - - *id002
+                                - STRING.String
+                              - - *id003
+                                - STRING.String
+                              - - *id004
+                                - STRING.String
+                              - - ['0', '2', '0', '1']
+                                - MAP.Map
+                              - - ['0', '0', '0', '0', '0', '0', '1']
+                                - STRING.String
+                          - [MAP.Map]
+                        sort: STRING.String
+                        occurrence: *id005
+                      - [STRING.String]
+                    sort: STRING.String
+                    occurrence: ['0', '0', '0', '0', '0', '1']
+                  - [STRING.String]
+                - - inj{SortDecls{}, SortKItem{}}
+                  - default: null
+                    specializations:
+                    - - Lbl'Stop'List'LBraQuotUndsUndsUnds'LESSON-17-EX1-FUNCTIONS-CELLCOLLECTION-SYNTAX'Unds'Decls'Unds'Decl'Unds'Decls'QuotRBraUnds'Decls{}
+                      - action:
+                        - 238
+                        - - - *id001
+                            - STRING.String
+                          - - *id002
+                            - STRING.String
+                          - - *id003
+                            - STRING.String
+                          - - *id005
+                            - STRING.String
+                          - - *id004
+                            - STRING.String
+                      - []
+                    - - Lbl'UndsUndsUnds'LESSON-17-EX1-FUNCTIONS-CELLCOLLECTION-SYNTAX'Unds'Decls'Unds'Decl'Unds'Decls{}
+                      - action:
+                        - 239
+                        - - - *id001
+                            - STRING.String
+                          - - *id002
+                            - STRING.String
+                          - - *id003
+                            - STRING.String
+                          - - *id005
+                            - STRING.String
+                          - - *id004
+                            - STRING.String
+                          - - ['0', '0', '0', '0', '0', '0', '1']
+                            - STRING.String
+                          - - ['1', '0', '0', '0', '0', '0', '1']
+                            - STRING.String
+                      - [STRING.String, STRING.String]
+                    sort: STRING.String
+                    occurrence: ['0', '0', '0', '0', '0', '1']
+                  - [STRING.String]
+                - - inj{SortExp{}, SortKItem{}}
+                  - default: null
+                    specializations:
+                    - - Lbl'-LT-'fstack'-GT-'{}
+                      - default: null
+                        specializations:
+                        - - Lbl'-LT-'state'-GT-'{}
+                          - default: null
+                            specializations:
+                            - - Lbl'-LT-'functions'-GT-'{}
+                              - default: null
+                                specializations:
+                                - - Lbl'UndsLParRParUnds'LESSON-17-EX1-FUNCTIONS-CELLCOLLECTION-SYNTAX'Unds'Exp'Unds'Id{}
+                                  - next:
+                                      args:
+                                      - - &id006 ['0', '1', '0', '1']
+                                        - MAP.Map
+                                      - - &id007 [size, '0', '1', '0', '1']
+                                        - STRING.String
+                                      next:
+                                        args:
+                                        - - *id006
+                                          - MAP.Map
+                                        - - *id007
+                                          - STRING.String
+                                        next:
+                                          default: null
+                                          specializations:
+                                          - - '1'
+                                            - default: null
+                                              specializations:
+                                              - - Lbl'-LT-'function'-GT-'{}
+                                                - default: null
+                                                  specializations:
+                                                  - - Lbl'-LT-'fbody'-GT-'{}
+                                                    - default: null
+                                                      specializations:
+                                                      - - Lbl'-LT-'fname'-GT-'{}
+                                                        - default: &id013
+                                                            default: fail
+                                                            specializations:
+                                                            - - kseq{}
+                                                              - default: fail
+                                                                specializations:
+                                                                - - Lbl'Hash'freezer'UndsEqlsUndsSClnUnds'LESSON-17-EX1-FUNCTIONS-CELLCOLLECTION-SYNTAX'Unds'Stmt'Unds'Id'Unds'Exp1'Unds'{}
+                                                                  - default: fail
+                                                                    specializations:
+                                                                    - - kseq{}
+                                                                      - default: fail
+                                                                        specializations:
+                                                                        - - dotk{}
+                                                                          - default: fail
+                                                                            specializations:
+                                                                            - - inj{SortId{},
+                                                                                SortKItem{}}
+                                                                              - args:
+                                                                                - - &id008 [
+                                                                                    '0',
+                                                                                    '0',
+                                                                                    '0',
+                                                                                    '0',
+                                                                                    '1']
+                                                                                  - STRING.String
+                                                                                next:
+                                                                                  default: null
+                                                                                  specializations:
+                                                                                  - - '1'
+                                                                                    - action:
+                                                                                      - 234
+                                                                                      - - - *id001
+                                                                                          - STRING.String
+                                                                                        - - &id010 [
+                                                                                            '1',
+                                                                                            '1',
+                                                                                            '0',
+                                                                                            '0',
+                                                                                            '0',
+                                                                                            '1']
+                                                                                          - STRING.String
+                                                                                        - - *id003
+                                                                                          - STRING.String
+                                                                                        - - *id005
+                                                                                          - STRING.String
+                                                                                        - - *id004
+                                                                                          - STRING.String
+                                                                                        - - *id008
+                                                                                          - STRING.String
+                                                                                        - - &id011 [
+                                                                                            '0',
+                                                                                            '0',
+                                                                                            '0',
+                                                                                            '0',
+                                                                                            '0',
+                                                                                            '1']
+                                                                                          - STRING.String
+                                                                                        - - [
+                                                                                            '0',
+                                                                                            '0',
+                                                                                            '0',
+                                                                                            '0',
+                                                                                            '1',
+                                                                                            '0',
+                                                                                            '0',
+                                                                                            '0',
+                                                                                            '1']
+                                                                                          - STRING.String
+                                                                                    - []
+                                                                                  - - '0'
+                                                                                    - fail
+                                                                                    - []
+                                                                                  bitwidth: 1
+                                                                                  sort: BOOL.Bool
+                                                                                  occurrence: &id009 [
+                                                                                    side_condition_234]
+                                                                                function: side_condition_234
+                                                                                sort: BOOL.Bool
+                                                                                occurrence: *id009
+                                                                              - [
+                                                                                STRING.String]
+                                                                            sort: STRING.String
+                                                                            occurrence: [
+                                                                              '0',
+                                                                              '0',
+                                                                              '0',
+                                                                              '1',
+                                                                              '0',
+                                                                              '0',
+                                                                              '0',
+                                                                              '1']
+                                                                          - []
+                                                                        sort: STRING.String
+                                                                        occurrence: [
+                                                                          '1', '0',
+                                                                          '0', '1',
+                                                                          '0', '0',
+                                                                          '0', '1']
+                                                                      - [STRING.String,
+                                                                        STRING.String]
+                                                                    sort: STRING.String
+                                                                    occurrence: [
+                                                                      '0', '0', '1',
+                                                                      '0', '0', '0',
+                                                                      '1']
+                                                                  - [STRING.String]
+                                                                - - Lbl'Hash'freezerreturn'UndsSClnUnds'LESSON-17-EX1-FUNCTIONS-CELLCOLLECTION-SYNTAX'Unds'Stmt'Unds'Exp0'Unds'{}
+                                                                  - args:
+                                                                    - - *id008
+                                                                      - STRING.String
+                                                                    next:
+                                                                      default: null
+                                                                      specializations:
+                                                                      - - '1'
+                                                                        - action:
+                                                                          - 235
+                                                                          - - - *id001
+                                                                              - STRING.String
+                                                                            - - *id010
+                                                                              - STRING.String
+                                                                            - - *id003
+                                                                              - STRING.String
+                                                                            - - *id005
+                                                                              - STRING.String
+                                                                            - - *id004
+                                                                              - STRING.String
+                                                                            - - *id008
+                                                                              - STRING.String
+                                                                            - - *id011
+                                                                              - STRING.String
+                                                                        - []
+                                                                      - - '0'
+                                                                        - fail
+                                                                        - []
+                                                                      bitwidth: 1
+                                                                      sort: BOOL.Bool
+                                                                      occurrence: &id012 [
+                                                                        side_condition_235]
+                                                                    function: side_condition_235
+                                                                    sort: BOOL.Bool
+                                                                    occurrence: *id012
+                                                                  - []
+                                                                sort: STRING.String
+                                                                occurrence: ['0',
+                                                                  '1', '0', '0', '0',
+                                                                  '1']
+                                                              - [STRING.String, STRING.String]
+                                                            sort: STRING.String
+                                                            occurrence: *id002
+                                                          specializations:
+                                                          - - kseq{}
+                                                            - default: *id013
+                                                              specializations:
+                                                              - - dotk{}
+                                                                - default: *id013
+                                                                  specializations:
+                                                                  - - inj{SortId{},
+                                                                      SortKItem{}}
+                                                                    - args:
+                                                                      - - &id014 [
+                                                                          '0', '0',
+                                                                          '0', '0',
+                                                                          '0', '0',
+                                                                          '1']
+                                                                        - STRING.String
+                                                                      - - ['0', '0',
+                                                                          '0', '0',
+                                                                          'SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                                                            SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                                                            SymbolP(dotk{},List())))))_val',
+                                                                          '0', '1',
+                                                                          '0', '1']
+                                                                        - STRING.String
+                                                                      next:
+                                                                        default: null
+                                                                        specializations:
+                                                                        - - '1'
+                                                                          - action:
+                                                                            - 240
+                                                                            - - - *id001
+                                                                                - STRING.String
+                                                                              - - [
+                                                                                  '0',
+                                                                                  '3',
+                                                                                  '0',
+                                                                                  '1']
+                                                                                - LIST.List
+                                                                              - - [
+                                                                                  'SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                                                                    SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                                                                    SymbolP(dotk{},List())))))_rem',
+                                                                                  '0',
+                                                                                  '1',
+                                                                                  '0',
+                                                                                  '1']
+                                                                                - MAP.Map
+                                                                              - - *id003
+                                                                                - STRING.String
+                                                                              - - [
+                                                                                  '0',
+                                                                                  '1',
+                                                                                  'SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                                                                    SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                                                                    SymbolP(dotk{},List())))))_val',
+                                                                                  '0',
+                                                                                  '1',
+                                                                                  '0',
+                                                                                  '1']
+                                                                                - STRING.String
+                                                                              - - *id002
+                                                                                - STRING.String
+                                                                              - - [
+                                                                                  '0',
+                                                                                  '2',
+                                                                                  '0',
+                                                                                  '1']
+                                                                                - MAP.Map
+                                                                              - - *id014
+                                                                                - STRING.String
+                                                                          - []
+                                                                        - - '0'
+                                                                          - *id013
+                                                                          - []
+                                                                        bitwidth: 1
+                                                                        sort: BOOL.Bool
+                                                                        occurrence: [
+                                                                          eq, '0',
+                                                                          '0', '0',
+                                                                          '0', '0',
+                                                                          '0', '1',
+                                                                          and, '0',
+                                                                          '0', '0',
+                                                                          '0', 'SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                                                            SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                                                            SymbolP(dotk{},List())))))_val',
+                                                                          '0', '1',
+                                                                          '0', '1']
+                                                                      function: hook_KEQUAL_eq
+                                                                      sort: BOOL.Bool
+                                                                      occurrence: [
+                                                                        eq, '0', '0',
+                                                                        '0', '0',
+                                                                        '0', '0',
+                                                                        '1', and,
+                                                                        '0', '0',
+                                                                        '0', '0',
+                                                                        'SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                                                          SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                                                          SymbolP(dotk{},List())))))_val',
+                                                                        '0', '1',
+                                                                        '0', '1']
+                                                                    - [STRING.String]
+                                                                  sort: STRING.String
+                                                                  occurrence: ['0',
+                                                                    '0', '0', 'SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                                                      SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                                                      SymbolP(dotk{},List())))))_val',
+                                                                    '0', '1', '0',
+                                                                    '1']
+                                                                - []
+                                                              sort: STRING.String
+                                                              occurrence: ['1', '0',
+                                                                '0', 'SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                                                  SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                                                  SymbolP(dotk{},List())))))_val',
+                                                                '0', '1', '0', '1']
+                                                            - [STRING.String, STRING.String]
+                                                          sort: STRING.String
+                                                          occurrence: ['0', '0', 'SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                                              SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                                              SymbolP(dotk{},List())))))_val',
+                                                            '0', '1', '0', '1']
+                                                        - [STRING.String]
+                                                      sort: STRING.String
+                                                      occurrence: ['0', 'SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                                          SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                                          SymbolP(dotk{},List())))))_val',
+                                                        '0', '1', '0', '1']
+                                                    - [STRING.String]
+                                                  sort: STRING.String
+                                                  occurrence: ['1', 'SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                                      SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                                      SymbolP(dotk{},List())))))_val',
+                                                    '0', '1', '0', '1']
+                                                - [STRING.String, STRING.String]
+                                              sort: STRING.String
+                                              occurrence: ['SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                                  SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                                  SymbolP(dotk{},List())))))_val',
+                                                '0', '1', '0', '1']
+                                            - [STRING.String, MAP.Map, MAP.Map]
+                                          - - '0'
+                                            - *id013
+                                            - [MAP.Map]
+                                          isnull: true
+                                          sort: STRING.String
+                                          occurrence: ['SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                              SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                              SymbolP(dotk{},List())))))_val', '0',
+                                            '1', '0', '1']
+                                        function: hook_MAP_remove
+                                        sort: MAP.Map
+                                        occurrence: ['SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                            SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                            SymbolP(dotk{},List())))))_rem', '0',
+                                          '1', '0', '1']
+                                      function: hook_MAP_lookup_null
+                                      sort: STRING.String
+                                      occurrence: ['SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                          SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                          SymbolP(dotk{},List())))))_val', '0', '1',
+                                        '0', '1']
+                                    pattern:
+                                      args:
+                                      - args:
+                                        - args:
+                                          - hook: STRING.String
+                                            occurrence: *id014
+                                          constructor: inj{SortId{}, SortKItem{}}
+                                        - args: []
+                                          constructor: dotk{}
+                                        constructor: kseq{}
+                                      constructor: Lbl'-LT-'fname'-GT-'{}
+                                    occurrence: *id007
+                                    sort: STRING.String
+                                  - [STRING.String]
+                                sort: STRING.String
+                                occurrence: *id011
+                              - [MAP.Map]
+                            sort: STRING.String
+                            occurrence: *id003
+                          - [MAP.Map]
+                        sort: STRING.String
+                        occurrence: *id005
+                      - [LIST.List]
+                    sort: STRING.String
+                    occurrence: *id004
+                  - [STRING.String]
+                - - inj{SortStmt{}, SortKItem{}}
+                  - default: null
+                    specializations:
+                    - - Lbl'UndsEqlsUndsSClnUnds'LESSON-17-EX1-FUNCTIONS-CELLCOLLECTION-SYNTAX'Unds'Stmt'Unds'Id'Unds'Exp{}
+                      - args:
+                        - - &id015 ['1', '0', '0', '0', '0', '0', '1']
+                          - STRING.String
+                        next:
+                          default: null
+                          specializations:
+                          - - '1'
+                            - action:
+                              - 242
+                              - - - *id001
+                                  - STRING.String
+                                - - *id002
+                                  - STRING.String
+                                - - *id003
+                                  - STRING.String
+                                - - *id005
+                                  - STRING.String
+                                - - *id004
+                                  - STRING.String
+                                - - *id015
+                                  - STRING.String
+                                - - &id018 ['0', '0', '0', '0', '0', '0', '1']
+                                  - STRING.String
+                            - []
+                          - - '0'
+                            - default: null
+                              specializations:
+                              - - Lbl'-LT-'state'-GT-'{}
+                                - default: fail
+                                  specializations:
+                                  - - inj{SortInt{}, SortExp{}}
+                                    - next:
+                                        args:
+                                        - - &id016 ['0', '2', '0', '1']
+                                          - MAP.Map
+                                        - - &id017 [size, '0', '2', '0', '1']
+                                          - STRING.String
+                                        next:
+                                          args:
+                                          - - *id016
+                                            - MAP.Map
+                                          - - *id017
+                                            - STRING.String
+                                          next:
+                                            default: null
+                                            specializations:
+                                            - - '1'
+                                              - action:
+                                                - 243
+                                                - - - *id001
+                                                    - STRING.String
+                                                  - - *id002
+                                                    - STRING.String
+                                                  - - ['SymbolP(inj{SortId{}, SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS())))_rem',
+                                                      '0', '2', '0', '1']
+                                                    - MAP.Map
+                                                  - - ['SymbolP(inj{SortId{}, SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS())))_val',
+                                                      '0', '2', '0', '1']
+                                                    - STRING.String
+                                                  - - *id003
+                                                    - STRING.String
+                                                  - - *id004
+                                                    - STRING.String
+                                                  - - ['0', '1', '0', '0', '0', '0',
+                                                      '0', '1']
+                                                    - INT.Int
+                                                  - - *id018
+                                                    - STRING.String
+                                              - [STRING.String, MAP.Map, MAP.Map]
+                                            - - '0'
+                                              - fail
+                                              - [MAP.Map]
+                                            isnull: true
+                                            sort: STRING.String
+                                            occurrence: ['SymbolP(inj{SortId{}, SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS())))_val',
+                                              '0', '2', '0', '1']
+                                          function: hook_MAP_remove
+                                          sort: MAP.Map
+                                          occurrence: ['SymbolP(inj{SortId{}, SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS())))_rem',
+                                            '0', '2', '0', '1']
+                                        function: hook_MAP_lookup_null
+                                        sort: STRING.String
+                                        occurrence: ['SymbolP(inj{SortId{}, SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS())))_val',
+                                          '0', '2', '0', '1']
+                                      pattern:
+                                        args:
+                                        - hook: STRING.String
+                                          occurrence: *id018
+                                        constructor: inj{SortId{}, SortKItem{}}
+                                      occurrence: *id017
+                                      sort: STRING.String
+                                    - [INT.Int]
+                                  sort: STRING.String
+                                  occurrence: *id015
+                                - [MAP.Map]
+                              sort: STRING.String
+                              occurrence: *id005
+                            - []
+                          bitwidth: 1
+                          sort: BOOL.Bool
+                          occurrence: &id019 [side_condition_242]
+                        function: side_condition_242
+                        sort: BOOL.Bool
+                        occurrence: *id019
+                      - [STRING.String, STRING.String]
+                    - - Lblreturn'UndsSClnUnds'LESSON-17-EX1-FUNCTIONS-CELLCOLLECTION-SYNTAX'Unds'Stmt'Unds'Exp{}
+                      - args:
+                        - - &id020 ['0', '0', '0', '0', '0', '0', '1']
+                          - STRING.String
+                        next:
+                          default: null
+                          specializations:
+                          - - '1'
+                            - action:
+                              - 244
+                              - - - *id001
+                                  - STRING.String
+                                - - *id002
+                                  - STRING.String
+                                - - *id003
+                                  - STRING.String
+                                - - *id005
+                                  - STRING.String
+                                - - *id004
+                                  - STRING.String
+                                - - *id020
+                                  - STRING.String
+                            - []
+                          - - '0'
+                            - default: null
+                              specializations:
+                              - - Lbl'-LT-'fstack'-GT-'{}
+                                - default: null
+                                  specializations:
+                                  - - Lbl'-LT-'state'-GT-'{}
+                                    - default: fail
+                                      specializations:
+                                      - - inj{SortInt{}, SortExp{}}
+                                        - args:
+                                          - - &id021 ['0', '3', '0', '1']
+                                            - LIST.List
+                                          next:
+                                            default: &id022
+                                              args:
+                                              - - *id021
+                                                - LIST.List
+                                              - - [lit, '0', MINT.MInt 64]
+                                                - MINT.MInt 64
+                                              next:
+                                                default: fail
+                                                specializations:
+                                                - - LblstackFrame'LParUndsCommUndsRParUnds'LESSON-17-EX1-FUNCTIONS-CELLCOLLECTION'Unds'KItem'Unds'K'Unds'Map{}
+                                                  - args:
+                                                    - - *id021
+                                                      - LIST.List
+                                                    - - [lit, '1', MINT.MInt 64]
+                                                      - MINT.MInt 64
+                                                    - - [lit, '0', MINT.MInt 64]
+                                                      - MINT.MInt 64
+                                                    next:
+                                                      action:
+                                                      - 245
+                                                      - - - *id001
+                                                          - STRING.String
+                                                        - - *id003
+                                                          - STRING.String
+                                                        - - ['1', '0', '3', '0', '1']
+                                                          - LIST.List
+                                                        - - *id002
+                                                          - STRING.String
+                                                        - - ['0', '2', '0', '1']
+                                                          - MAP.Map
+                                                        - - ['0', '0', '0', '0', '0',
+                                                            '0', '0', '1']
+                                                          - INT.Int
+                                                        - - ['0', '0', '0', '3', '0',
+                                                            '1']
+                                                          - STRING.String
+                                                        - - ['1', '0', '0', '3', '0',
+                                                            '1']
+                                                          - MAP.Map
+                                                    function: hook_LIST_range_long
+                                                    sort: LIST.List
+                                                    occurrence: ['1', '0', '3', '0',
+                                                      '1']
+                                                  - [STRING.String, MAP.Map]
+                                                sort: STRING.String
+                                                occurrence: ['0', '0', '3', '0', '1']
+                                              function: hook_LIST_get_long
+                                              sort: STRING.String
+                                              occurrence: ['0', '0', '3', '0', '1']
+                                            specializations:
+                                            - - '0'
+                                              - fail
+                                              - []
+                                            - - '1'
+                                              - *id022
+                                              - [STRING.String]
+                                            bitwidth: 64
+                                            sort: MINT.MInt 64
+                                            occurrence: &id023 [size, '0', '3', '0',
+                                              '1']
+                                          function: hook_LIST_size_long
+                                          sort: MINT.MInt 64
+                                          occurrence: *id023
+                                        - [INT.Int]
+                                      sort: STRING.String
+                                      occurrence: *id020
+                                    - [MAP.Map]
+                                  sort: STRING.String
+                                  occurrence: *id005
+                                - [LIST.List]
+                              sort: STRING.String
+                              occurrence: *id004
+                            - []
+                          bitwidth: 1
+                          sort: BOOL.Bool
+                          occurrence: &id024 [side_condition_244]
+                        function: side_condition_244
+                        sort: BOOL.Bool
+                        occurrence: *id024
+                      - [STRING.String]
+                    sort: STRING.String
+                    occurrence: ['0', '0', '0', '0', '0', '1']
+                  - [STRING.String]
+                - - inj{SortId{}, SortKItem{}}
+                  - default: null
+                    specializations:
+                    - - Lbl'-LT-'state'-GT-'{}
+                      - next:
+                          args:
+                          - - &id025 ['0', '2', '0', '1']
+                            - MAP.Map
+                          - - &id026 [size, '0', '2', '0', '1']
+                            - STRING.String
+                          next:
+                            args:
+                            - - *id025
+                              - MAP.Map
+                            - - *id026
+                              - STRING.String
+                            next:
+                              default: null
+                              specializations:
+                              - - '1'
+                                - action:
+                                  - 241
+                                  - - - *id001
+                                      - STRING.String
+                                    - - *id002
+                                      - STRING.String
+                                    - - ['SymbolP(inj{SortId{}, SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base()))))))),StringS())))_rem',
+                                        '0', '2', '0', '1']
+                                      - MAP.Map
+                                    - - *id003
+                                      - STRING.String
+                                    - - *id004
+                                      - STRING.String
+                                    - - *id005
+                                      - STRING.String
+                                    - - ['SymbolP(inj{SortId{}, SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base()))))))),StringS())))_val',
+                                        '0', '2', '0', '1']
+                                      - STRING.String
+                                    - - &id030 ['0', '0', '0', '0', '0', '1']
+                                      - STRING.String
+                                - [STRING.String, MAP.Map, MAP.Map]
+                              - - '0'
+                                - &id031
+                                  default: fail
+                                  specializations:
+                                  - - kseq{}
+                                    - default: fail
+                                      specializations:
+                                      - - Lbl'Hash'freezer'UndsEqlsUndsSClnUnds'LESSON-17-EX1-FUNCTIONS-CELLCOLLECTION-SYNTAX'Unds'Stmt'Unds'Id'Unds'Exp1'Unds'{}
+                                        - default: fail
+                                          specializations:
+                                          - - kseq{}
+                                            - default: fail
+                                              specializations:
+                                              - - dotk{}
+                                                - default: fail
+                                                  specializations:
+                                                  - - inj{SortId{}, SortKItem{}}
+                                                    - args:
+                                                      - - *id008
+                                                        - STRING.String
+                                                      next:
+                                                        default: null
+                                                        specializations:
+                                                        - - '1'
+                                                          - action:
+                                                            - 234
+                                                            - - - *id001
+                                                                - STRING.String
+                                                              - - &id028 ['1', '1',
+                                                                  '0', '0', '0', '1']
+                                                                - STRING.String
+                                                              - - *id003
+                                                                - STRING.String
+                                                              - - *id005
+                                                                - STRING.String
+                                                              - - *id004
+                                                                - STRING.String
+                                                              - - *id008
+                                                                - STRING.String
+                                                              - - *id008
+                                                                - STRING.String
+                                                              - - ['0', '0', '0',
+                                                                  '0', '1', '0', '0',
+                                                                  '0', '1']
+                                                                - STRING.String
+                                                          - []
+                                                        - - '0'
+                                                          - fail
+                                                          - []
+                                                        bitwidth: 1
+                                                        sort: BOOL.Bool
+                                                        occurrence: &id027 [side_condition_234]
+                                                      function: side_condition_234
+                                                      sort: BOOL.Bool
+                                                      occurrence: *id027
+                                                    - [STRING.String]
+                                                  sort: STRING.String
+                                                  occurrence: ['0', '0', '0', '1',
+                                                    '0', '0', '0', '1']
+                                                - []
+                                              sort: STRING.String
+                                              occurrence: ['1', '0', '0', '1', '0',
+                                                '0', '0', '1']
+                                            - [STRING.String, STRING.String]
+                                          sort: STRING.String
+                                          occurrence: ['0', '0', '1', '0', '0', '0',
+                                            '1']
+                                        - [STRING.String]
+                                      - - Lbl'Hash'freezerreturn'UndsSClnUnds'LESSON-17-EX1-FUNCTIONS-CELLCOLLECTION-SYNTAX'Unds'Stmt'Unds'Exp0'Unds'{}
+                                        - args:
+                                          - - *id008
+                                            - STRING.String
+                                          next:
+                                            default: null
+                                            specializations:
+                                            - - '1'
+                                              - action:
+                                                - 235
+                                                - - - *id001
+                                                    - STRING.String
+                                                  - - *id028
+                                                    - STRING.String
+                                                  - - *id003
+                                                    - STRING.String
+                                                  - - *id005
+                                                    - STRING.String
+                                                  - - *id004
+                                                    - STRING.String
+                                                  - - *id008
+                                                    - STRING.String
+                                                  - - *id008
+                                                    - STRING.String
+                                              - []
+                                            - - '0'
+                                              - fail
+                                              - []
+                                            bitwidth: 1
+                                            sort: BOOL.Bool
+                                            occurrence: &id029 [side_condition_235]
+                                          function: side_condition_235
+                                          sort: BOOL.Bool
+                                          occurrence: *id029
+                                        - []
+                                      sort: STRING.String
+                                      occurrence: ['0', '1', '0', '0', '0', '1']
+                                    - [STRING.String, STRING.String]
+                                  sort: STRING.String
+                                  occurrence: *id002
+                                - [MAP.Map]
+                              isnull: true
+                              sort: STRING.String
+                              occurrence: ['SymbolP(inj{SortId{}, SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base()))))))),StringS())))_val',
+                                '0', '2', '0', '1']
+                            function: hook_MAP_remove
+                            sort: MAP.Map
+                            occurrence: ['SymbolP(inj{SortId{}, SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base()))))))),StringS())))_rem',
+                              '0', '2', '0', '1']
+                          function: hook_MAP_lookup_null
+                          sort: STRING.String
+                          occurrence: ['SymbolP(inj{SortId{}, SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base()))))))),StringS())))_val',
+                            '0', '2', '0', '1']
+                        pattern:
+                          args:
+                          - hook: STRING.String
+                            occurrence: *id030
+                          constructor: inj{SortId{}, SortKItem{}}
+                        occurrence: *id026
+                        sort: STRING.String
+                      - [MAP.Map]
+                    sort: STRING.String
+                    occurrence: *id005
+                  - [STRING.String]
+                - - inj{SortInt{}, SortKItem{}}
+                  - *id031
+                  - [INT.Int]
+                sort: STRING.String
+                occurrence: *id008
+              - [STRING.String, STRING.String]
+            sort: STRING.String
+            occurrence: ['0', '0', '0', '1']
+          - [STRING.String]
+        sort: STRING.String
+        occurrence: ['0', '0', '1']
+      - [STRING.String, STRING.String, STRING.String, STRING.String]
+    sort: STRING.String
+    occurrence: ['0', '1']
+  - [STRING.String, STRING.String]
+sort: STRING.String
+occurrence: ['1']

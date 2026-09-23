@@ -1,0 +1,52 @@
+default: null
+specializations:
+- - Lbl'-LT-'generatedTop'-GT-'{}
+  - default: null
+    specializations:
+    - - Lbl'-LT-'T'-GT-'{}
+      - default: null
+        specializations:
+        - - Lbl'-LT-'k'-GT-'{}
+          - default: fail
+            specializations:
+            - - kseq{}
+              - default: fail
+                specializations:
+                - - inj{SortDecls{}, SortKItem{}}
+                  - default: fail
+                    specializations:
+                    - - Lbl'UndsUndsUnds'LESSON-17-EX1-FUNCTIONS-CELLCOLLECTION-SYNTAX'Unds'Decls'Unds'Decl'Unds'Decls{}
+                      - action:
+                        - 239
+                        - - - ['1', '1']
+                            - STRING.String
+                          - - ['1', '0', '0', '0', '1']
+                            - STRING.String
+                          - - ['1', '0', '1']
+                            - STRING.String
+                          - - ['2', '0', '1']
+                            - STRING.String
+                          - - ['3', '0', '1']
+                            - STRING.String
+                          - - ['0', '0', '0', '0', '0', '0', '1']
+                            - STRING.String
+                          - - ['1', '0', '0', '0', '0', '0', '1']
+                            - STRING.String
+                      - [STRING.String, STRING.String]
+                    sort: STRING.String
+                    occurrence: ['0', '0', '0', '0', '0', '1']
+                  - [STRING.String]
+                sort: STRING.String
+                occurrence: ['0', '0', '0', '0', '1']
+              - [STRING.String, STRING.String]
+            sort: STRING.String
+            occurrence: ['0', '0', '0', '1']
+          - [STRING.String]
+        sort: STRING.String
+        occurrence: ['0', '0', '1']
+      - [STRING.String, STRING.String, STRING.String, STRING.String]
+    sort: STRING.String
+    occurrence: ['0', '1']
+  - [STRING.String, STRING.String]
+sort: STRING.String
+occurrence: ['1']

@@ -1,0 +1,257 @@
+default: null
+specializations:
+- - Lbl'-LT-'generatedTop'-GT-'{}
+  - default: null
+    specializations:
+    - - Lbl'-LT-'k'-GT-'{}
+      - default: fail
+        specializations:
+        - - kseq{}
+          - default: fail
+            specializations:
+            - - inj{SortExp{}, SortKItem{}}
+              - default: null
+                specializations:
+                - - Lbl'UndsAnd-And-UndsUnds'LESSON-13-EX1-SUB-SYNTAX'Unds'Exp'Unds'Exp'Unds'Exp{}
+                  - default:
+                      action:
+                      - 162
+                      - - - &id001 ['1', '1']
+                          - STRING.String
+                        - - &id002 ['1', '0', '0', '1']
+                          - STRING.String
+                        - - &id003 ['0', '0', '0', '0', '0', '1']
+                          - STRING.String
+                        - - &id004 ['1', '0', '0', '0', '0', '1']
+                          - STRING.String
+                    specializations:
+                    - - inj{SortBool{}, SortExp{}}
+                      - default: &id005
+                          action:
+                          - 164
+                          - - - *id001
+                              - STRING.String
+                            - - *id002
+                              - STRING.String
+                            - - *id003
+                              - STRING.String
+                            - - *id004
+                              - STRING.String
+                        specializations:
+                        - - inj{SortBool{}, SortExp{}}
+                          - action:
+                            - 163
+                            - - - *id001
+                                - STRING.String
+                              - - *id002
+                                - STRING.String
+                              - - ['0', '0', '0', '0', '0', '0', '1']
+                                - BOOL.Bool
+                              - - ['0', '1', '0', '0', '0', '0', '1']
+                                - BOOL.Bool
+                          - [BOOL.Bool]
+                        sort: STRING.String
+                        occurrence: *id004
+                      - [BOOL.Bool]
+                    - - inj{SortInt{}, SortExp{}}
+                      - *id005
+                      - [INT.Int]
+                    sort: STRING.String
+                    occurrence: *id003
+                  - [STRING.String, STRING.String]
+                - - Lbl'UndsPlusUndsUnds'LESSON-13-EX1-SUB-SYNTAX'Unds'Exp'Unds'Exp'Unds'Exp{}
+                  - default:
+                      action:
+                      - 165
+                      - - - *id001
+                          - STRING.String
+                        - - *id002
+                          - STRING.String
+                        - - &id006 ['0', '0', '0', '0', '0', '1']
+                          - STRING.String
+                        - - &id007 ['1', '0', '0', '0', '0', '1']
+                          - STRING.String
+                    specializations:
+                    - - inj{SortInt{}, SortExp{}}
+                      - default: &id008
+                          action:
+                          - 167
+                          - - - *id001
+                              - STRING.String
+                            - - *id002
+                              - STRING.String
+                            - - *id006
+                              - STRING.String
+                            - - *id007
+                              - STRING.String
+                        specializations:
+                        - - inj{SortInt{}, SortExp{}}
+                          - action:
+                            - 166
+                            - - - *id001
+                                - STRING.String
+                              - - *id002
+                                - STRING.String
+                              - - ['0', '0', '0', '0', '0', '0', '1']
+                                - INT.Int
+                              - - ['0', '1', '0', '0', '0', '0', '1']
+                                - INT.Int
+                          - [INT.Int]
+                        sort: STRING.String
+                        occurrence: *id007
+                      - [INT.Int]
+                    - - inj{SortBool{}, SortExp{}}
+                      - *id008
+                      - [BOOL.Bool]
+                    sort: STRING.String
+                    occurrence: *id006
+                  - [STRING.String, STRING.String]
+                - - Lbl'Unds'-'UndsUnds'LESSON-13-EX1-SUB-SYNTAX'Unds'Exp'Unds'Exp'Unds'Exp{}
+                  - default:
+                      action:
+                      - 168
+                      - - - *id001
+                          - STRING.String
+                        - - *id002
+                          - STRING.String
+                        - - &id009 ['0', '0', '0', '0', '0', '1']
+                          - STRING.String
+                        - - &id010 ['1', '0', '0', '0', '0', '1']
+                          - STRING.String
+                    specializations:
+                    - - inj{SortInt{}, SortExp{}}
+                      - default: &id011
+                          action:
+                          - 170
+                          - - - *id001
+                              - STRING.String
+                            - - *id002
+                              - STRING.String
+                            - - *id009
+                              - STRING.String
+                            - - *id010
+                              - STRING.String
+                        specializations:
+                        - - inj{SortInt{}, SortExp{}}
+                          - action:
+                            - 169
+                            - - - *id001
+                                - STRING.String
+                              - - *id002
+                                - STRING.String
+                              - - ['0', '0', '0', '0', '0', '0', '1']
+                                - INT.Int
+                              - - ['0', '1', '0', '0', '0', '0', '1']
+                                - INT.Int
+                          - [INT.Int]
+                        sort: STRING.String
+                        occurrence: *id010
+                      - [INT.Int]
+                    - - inj{SortBool{}, SortExp{}}
+                      - *id011
+                      - [BOOL.Bool]
+                    sort: STRING.String
+                    occurrence: *id009
+                  - [STRING.String, STRING.String]
+                sort: STRING.String
+                occurrence: ['0', '0', '0', '0', '1']
+              - [STRING.String]
+            - - inj{SortBool{}, SortKItem{}}
+              - &id014
+                default: fail
+                specializations:
+                - - kseq{}
+                  - default: fail
+                    specializations:
+                    - - Lblfreezer2'LParUndsRParUnds'LESSON-13-EX1-SUB'Unds'KItem'Unds'Exp{}
+                      - action:
+                        - 171
+                        - - - *id001
+                            - STRING.String
+                          - - &id012 ['1', '1', '0', '0', '1']
+                            - STRING.String
+                          - - &id013 ['0', '0', '0', '1']
+                            - STRING.String
+                          - - ['0', '0', '1', '0', '0', '1']
+                            - STRING.String
+                      - [STRING.String]
+                    - - Lblfreezer4'LParUndsRParUnds'LESSON-13-EX1-SUB'Unds'KItem'Unds'Exp{}
+                      - action:
+                        - 172
+                        - - - *id001
+                            - STRING.String
+                          - - *id012
+                            - STRING.String
+                          - - *id013
+                            - STRING.String
+                          - - ['0', '0', '1', '0', '0', '1']
+                            - STRING.String
+                      - [STRING.String]
+                    - - Lblfreezer6'LParUndsRParUnds'LESSON-13-EX1-SUB'Unds'KItem'Unds'Exp{}
+                      - action:
+                        - 173
+                        - - - *id001
+                            - STRING.String
+                          - - *id012
+                            - STRING.String
+                          - - *id013
+                            - STRING.String
+                          - - ['0', '0', '1', '0', '0', '1']
+                            - STRING.String
+                      - [STRING.String]
+                    - - Lblfreezer1'LParUndsRParUnds'LESSON-13-EX1-SUB'Unds'KItem'Unds'Val{}
+                      - action:
+                        - 174
+                        - - - *id001
+                            - STRING.String
+                          - - *id012
+                            - STRING.String
+                          - - ['0', '0', '1', '0', '0', '1']
+                            - STRING.String
+                          - - *id013
+                            - STRING.String
+                      - [STRING.String]
+                    - - Lblfreezer3'LParUndsRParUnds'LESSON-13-EX1-SUB'Unds'KItem'Unds'Val{}
+                      - action:
+                        - 175
+                        - - - *id001
+                            - STRING.String
+                          - - *id012
+                            - STRING.String
+                          - - ['0', '0', '1', '0', '0', '1']
+                            - STRING.String
+                          - - *id013
+                            - STRING.String
+                      - [STRING.String]
+                    - - Lblfreezer5'LParUndsRParUnds'LESSON-13-EX1-SUB'Unds'KItem'Unds'Val{}
+                      - action:
+                        - 176
+                        - - - *id001
+                            - STRING.String
+                          - - *id012
+                            - STRING.String
+                          - - ['0', '0', '1', '0', '0', '1']
+                            - STRING.String
+                          - - *id013
+                            - STRING.String
+                      - [STRING.String]
+                    sort: STRING.String
+                    occurrence: ['0', '1', '0', '0', '1']
+                  - [STRING.String, STRING.String]
+                sort: STRING.String
+                occurrence: *id002
+              - [BOOL.Bool]
+            - - inj{SortInt{}, SortKItem{}}
+              - *id014
+              - [INT.Int]
+            sort: STRING.String
+            occurrence: *id013
+          - [STRING.String, STRING.String]
+        sort: STRING.String
+        occurrence: ['0', '0', '1']
+      - [STRING.String]
+    sort: STRING.String
+    occurrence: ['0', '1']
+  - [STRING.String, STRING.String]
+sort: STRING.String
+occurrence: ['1']

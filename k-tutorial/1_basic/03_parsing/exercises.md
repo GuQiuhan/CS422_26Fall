@@ -1,0 +1,3 @@
+* Exercise 1: Stored in `lesson-03-d.k` (compiled with ahead-of-time parsing), tested with `and-or-left.bool`
+* Exercise 2: Stored in `lesson-03-e.k`, tested with `ambiguous.exp`
+* Exercise 3: Uses the grammar in `lesson-03-e.k`; ambiguous program in `ambiguous.exp`, disambiguated with brackets in `left.exp` and `right.exp`

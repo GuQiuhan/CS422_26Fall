@@ -1,0 +1,11 @@
+fun main() {
+  int x;
+  int y;
+  x = 5;
+  if (x == 5) {
+    y = 100;
+  } else {
+    y = 200;
+  }
+  return y;
+}

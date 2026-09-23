@@ -1,0 +1,4 @@
+8ed63a85807e6838859bfc447841cbac625562e649a32d15abae0c8840da20b3 /Users/gqh/Desktop/CS422/k-tutorial/1_basic/05_modules/lesson-05-d.k:9:8
+c384edb8f3875244a593dda6163c3dee1bce5485e4e1848892aebc2bab67d2e9 /nix/store/aqjgfc96ra0v1drpil3jlx23frcz5nrb-k-7.1.337-4a46d1231473b599c699160132fd6e76a5c46406/include/kframework/builtin/domains.md:749:8
+fe0dc9fc4af663478f83c7e32def3fa642d20b19a139319a5343ca58a0ce1e78 /Users/gqh/Desktop/CS422/k-tutorial/1_basic/05_modules/lesson-05-d.k:15:8
+f6967050cc4ec32c2d34d52f5577e09120f730420d2c5dc838cba81d04c57adf /nix/store/aqjgfc96ra0v1drpil3jlx23frcz5nrb-k-7.1.337-4a46d1231473b599c699160132fd6e76a5c46406/include/kframework/builtin/domains.md:955:8

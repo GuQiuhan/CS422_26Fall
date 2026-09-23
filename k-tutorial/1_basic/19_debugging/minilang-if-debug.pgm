@@ -1,0 +1,12 @@
+fun main() {
+  int x;
+  int y;
+  x = 5;
+  y = x + 3;
+  if (y == 8) {
+    y = y - 1;
+  } else {
+    y = 0;
+  }
+  return y;
+}

@@ -1,0 +1,73 @@
+default: null
+specializations:
+- - Lbl'-LT-'generatedTop'-GT-'{}
+  - default: null
+    specializations:
+    - - Lbl'-LT-'T'-GT-'{}
+      - default: null
+        specializations:
+        - - Lbl'-LT-'k'-GT-'{}
+          - default: fail
+            specializations:
+            - - kseq{}
+              - default: fail
+                specializations:
+                - - inj{SortExp{}, SortKItem{}}
+                  - default: fail
+                    specializations:
+                    - - Lbl'UndsEqlsEqlsUndsUnds'LESSON-18-EX2-MINILANG-IF-SYNTAX'Unds'Exp'Unds'Exp'Unds'Exp{}
+                      - default: fail
+                        specializations:
+                        - - inj{SortBool{}, SortExp{}}
+                          - default: fail
+                            specializations:
+                            - - inj{SortBool{}, SortExp{}}
+                              - action:
+                                - 229
+                                - - - ['1', '1']
+                                    - STRING.String
+                                  - - ['1', '0', '0', '0', '1']
+                                    - STRING.String
+                                  - - ['1', '0', '1']
+                                    - STRING.String
+                                  - - ['2', '0', '1']
+                                    - STRING.String
+                                  - - ['3', '0', '1']
+                                    - STRING.String
+                                  - - ['0', '0', '0', '0', '0', '0', '0', '1']
+                                    - BOOL.Bool
+                                  - - ['0', '1', '0', '0', '0', '0', '0', '1']
+                                    - BOOL.Bool
+                              - [BOOL.Bool]
+                            sort: STRING.String
+                            occurrence: ['0', '0', '0', '0', '0', '0', '1']
+                          - [BOOL.Bool]
+                        sort: STRING.String
+                        occurrence: ['1', '0', '0', '0', '0', '0', '1']
+                      - [STRING.String, STRING.String]
+                    sort: STRING.String
+                    occurrence: ['0', '0', '0', '0', '0', '1']
+                  - [STRING.String]
+                - - inj{SortId{}, SortKItem{}}
+                  - fail
+                  - [STRING.String]
+                - - inj{SortBool{}, SortKItem{}}
+                  - fail
+                  - [BOOL.Bool]
+                - - inj{SortInt{}, SortKItem{}}
+                  - fail
+                  - [INT.Int]
+                sort: STRING.String
+                occurrence: ['0', '0', '0', '0', '1']
+              - [STRING.String, STRING.String]
+            sort: STRING.String
+            occurrence: ['0', '0', '0', '1']
+          - [STRING.String]
+        sort: STRING.String
+        occurrence: ['0', '0', '1']
+      - [STRING.String, STRING.String, STRING.String, STRING.String]
+    sort: STRING.String
+    occurrence: ['0', '1']
+  - [STRING.String, STRING.String]
+sort: STRING.String
+occurrence: ['1']

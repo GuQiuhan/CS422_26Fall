@@ -1,0 +1,46 @@
+default: null
+specializations:
+- - Lbl'-LT-'generatedTop'-GT-'{}
+  - default: null
+    specializations:
+    - - Lbl'-LT-'T'-GT-'{}
+      - default: null
+        specializations:
+        - - Lbl'-LT-'k'-GT-'{}
+          - default: fail
+            specializations:
+            - - kseq{}
+              - default: fail
+                specializations:
+                - - inj{SortStmt{}, SortKItem{}}
+                  - default: fail
+                    specializations:
+                    - - Lblreset'SClnUndsUnds'LESSON-15-EX3-STMT-SYNTAX'Unds'Stmt'Unds'Exp{}
+                      - action:
+                        - 816
+                        - - - ['1', '1']
+                            - STRING.String
+                          - - ['1', '0', '0', '0', '1']
+                            - STRING.String
+                          - - ['1', '0', '1']
+                            - STRING.String
+                          - - ['0', '0', '0', '0', '0', '0', '1']
+                            - STRING.String
+                      - [STRING.String]
+                    sort: STRING.String
+                    occurrence: ['0', '0', '0', '0', '0', '1']
+                  - [STRING.String]
+                sort: STRING.String
+                occurrence: ['0', '0', '0', '0', '1']
+              - [STRING.String, STRING.String]
+            sort: STRING.String
+            occurrence: ['0', '0', '0', '1']
+          - [STRING.String]
+        sort: STRING.String
+        occurrence: ['0', '0', '1']
+      - [STRING.String, STRING.String]
+    sort: STRING.String
+    occurrence: ['0', '1']
+  - [STRING.String, STRING.String]
+sort: STRING.String
+occurrence: ['1']

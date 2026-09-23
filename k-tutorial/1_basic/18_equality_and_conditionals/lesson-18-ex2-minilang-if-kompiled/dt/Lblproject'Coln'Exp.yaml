@@ -1,0 +1,35 @@
+default: fail
+specializations:
+- - kseq{}
+  - default: fail
+    specializations:
+    - - dotk{}
+      - default: fail
+        specializations:
+        - - inj{SortExp{}, SortKItem{}}
+          - action:
+            - 336
+            - - - ['0', '0', '1']
+                - STRING.String
+          - [STRING.String]
+        - - inj{SortId{}, SortKItem{}}
+          - &id001
+            action:
+            - 336
+            - - - &id002 ['0', '1']
+                - STRING.String
+          - [STRING.String]
+        - - inj{SortBool{}, SortKItem{}}
+          - *id001
+          - [BOOL.Bool]
+        - - inj{SortInt{}, SortKItem{}}
+          - *id001
+          - [INT.Int]
+        sort: STRING.String
+        occurrence: *id002
+      - []
+    sort: STRING.String
+    occurrence: ['1', '1']
+  - [STRING.String, STRING.String]
+sort: STRING.String
+occurrence: ['1']

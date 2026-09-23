@@ -1,0 +1,198 @@
+default: null
+specializations:
+- - Lbl'-LT-'generatedTop'-GT-'{}
+  - default: null
+    specializations:
+    - - Lbl'-LT-'k'-GT-'{}
+      - default: fail
+        specializations:
+        - - kseq{}
+          - default: fail
+            specializations:
+            - - kseq{}
+              - default: fail
+                specializations:
+                - - Lbl'Hash'freezer'Unds-GT-UndsUnds'LESSON-14-EX2-CALCULATOR-SYNTAX'Unds'Exp'Unds'Exp'Unds'Exp0'Unds'{}
+                  - default: fail
+                    specializations:
+                    - - kseq{}
+                      - default: fail
+                        specializations:
+                        - - dotk{}
+                          - default: fail
+                            specializations:
+                            - - inj{SortExp{}, SortKItem{}}
+                              - default: fail
+                                specializations:
+                                - - inj{SortExp{}, SortKItem{}}
+                                  - args:
+                                    - - &id001 ['0', '0', '0', '1']
+                                      - STRING.String
+                                    next:
+                                      default: null
+                                      specializations:
+                                      - - '1'
+                                        - action:
+                                          - 715
+                                          - - - &id003 ['1', '1']
+                                              - STRING.String
+                                            - - &id004 ['1', '1', '0', '0', '1']
+                                              - STRING.String
+                                            - - *id001
+                                              - STRING.String
+                                            - - &id005 ['0', '0', '0', '0', '1']
+                                              - STRING.String
+                                            - - ['0', '0', '0', '0', '1', '0', '0',
+                                                '1']
+                                              - STRING.String
+                                        - []
+                                      - - '0'
+                                        - fail
+                                        - []
+                                      bitwidth: 1
+                                      sort: BOOL.Bool
+                                      occurrence: &id002 [side_condition_715]
+                                    function: side_condition_715
+                                    sort: BOOL.Bool
+                                    occurrence: *id002
+                                  - [STRING.String]
+                                - - inj{SortBool{}, SortKItem{}}
+                                  - &id007
+                                    args:
+                                    - - *id001
+                                      - STRING.String
+                                    next:
+                                      default: null
+                                      specializations:
+                                      - - '1'
+                                        - action:
+                                          - 715
+                                          - - - *id003
+                                              - STRING.String
+                                            - - *id004
+                                              - STRING.String
+                                            - - *id001
+                                              - STRING.String
+                                            - - *id005
+                                              - STRING.String
+                                            - - &id008 ['0', '0', '0', '1', '0', '0',
+                                                '1']
+                                              - STRING.String
+                                        - []
+                                      - - '0'
+                                        - fail
+                                        - []
+                                      bitwidth: 1
+                                      sort: BOOL.Bool
+                                      occurrence: &id006 [side_condition_715]
+                                    function: side_condition_715
+                                    sort: BOOL.Bool
+                                    occurrence: *id006
+                                  - [BOOL.Bool]
+                                - - inj{SortInt{}, SortKItem{}}
+                                  - *id007
+                                  - [INT.Int]
+                                sort: STRING.String
+                                occurrence: *id008
+                              - [STRING.String]
+                            - - inj{SortBool{}, SortKItem{}}
+                              - &id014
+                                default: fail
+                                specializations:
+                                - - inj{SortExp{}, SortKItem{}}
+                                  - args:
+                                    - - *id001
+                                      - STRING.String
+                                    next:
+                                      default: null
+                                      specializations:
+                                      - - '1'
+                                        - action:
+                                          - 715
+                                          - - - *id003
+                                              - STRING.String
+                                            - - &id010 ['1', '1', '0', '0', '1']
+                                              - STRING.String
+                                            - - *id001
+                                              - STRING.String
+                                            - - *id001
+                                              - STRING.String
+                                            - - ['0', '0', '0', '0', '1', '0', '0',
+                                                '1']
+                                              - STRING.String
+                                        - []
+                                      - - '0'
+                                        - fail
+                                        - []
+                                      bitwidth: 1
+                                      sort: BOOL.Bool
+                                      occurrence: &id009 [side_condition_715]
+                                    function: side_condition_715
+                                    sort: BOOL.Bool
+                                    occurrence: *id009
+                                  - [STRING.String]
+                                - - inj{SortBool{}, SortKItem{}}
+                                  - &id012
+                                    args:
+                                    - - *id001
+                                      - STRING.String
+                                    next:
+                                      default: null
+                                      specializations:
+                                      - - '1'
+                                        - action:
+                                          - 715
+                                          - - - *id003
+                                              - STRING.String
+                                            - - *id010
+                                              - STRING.String
+                                            - - *id001
+                                              - STRING.String
+                                            - - *id001
+                                              - STRING.String
+                                            - - &id013 ['0', '0', '0', '1', '0', '0',
+                                                '1']
+                                              - STRING.String
+                                        - []
+                                      - - '0'
+                                        - fail
+                                        - []
+                                      bitwidth: 1
+                                      sort: BOOL.Bool
+                                      occurrence: &id011 [side_condition_715]
+                                    function: side_condition_715
+                                    sort: BOOL.Bool
+                                    occurrence: *id011
+                                  - [BOOL.Bool]
+                                - - inj{SortInt{}, SortKItem{}}
+                                  - *id012
+                                  - [INT.Int]
+                                sort: STRING.String
+                                occurrence: *id013
+                              - [BOOL.Bool]
+                            - - inj{SortInt{}, SortKItem{}}
+                              - *id014
+                              - [INT.Int]
+                            sort: STRING.String
+                            occurrence: ['0', '0', '0', '1']
+                          - []
+                        sort: STRING.String
+                        occurrence: ['1', '0', '0', '1', '0', '0', '1']
+                      - [STRING.String, STRING.String]
+                    sort: STRING.String
+                    occurrence: ['0', '0', '1', '0', '0', '1']
+                  - [STRING.String]
+                sort: STRING.String
+                occurrence: ['0', '1', '0', '0', '1']
+              - [STRING.String, STRING.String]
+            sort: STRING.String
+            occurrence: ['1', '0', '0', '1']
+          - [STRING.String, STRING.String]
+        sort: STRING.String
+        occurrence: ['0', '0', '1']
+      - [STRING.String]
+    sort: STRING.String
+    occurrence: ['0', '1']
+  - [STRING.String, STRING.String]
+sort: STRING.String
+occurrence: ['1']

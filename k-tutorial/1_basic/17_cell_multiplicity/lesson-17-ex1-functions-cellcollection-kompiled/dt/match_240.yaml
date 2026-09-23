@@ -1,0 +1,279 @@
+default: null
+specializations:
+- - Lbl'-LT-'generatedTop'-GT-'{}
+  - default: null
+    specializations:
+    - - Lbl'-LT-'T'-GT-'{}
+      - default: null
+        specializations:
+        - - Lbl'-LT-'fstack'-GT-'{}
+          - default: null
+            specializations:
+            - - Lbl'-LT-'state'-GT-'{}
+              - default: null
+                specializations:
+                - - Lbl'-LT-'functions'-GT-'{}
+                  - default: null
+                    specializations:
+                    - - Lbl'-LT-'k'-GT-'{}
+                      - default: fail
+                        specializations:
+                        - - kseq{}
+                          - default: fail
+                            specializations:
+                            - - inj{SortExp{}, SortKItem{}}
+                              - default: null
+                                specializations:
+                                - - Lbl'UndsLParRParUnds'LESSON-17-EX1-FUNCTIONS-CELLCOLLECTION-SYNTAX'Unds'Exp'Unds'Id{}
+                                  - next:
+                                      args:
+                                      - - &id001 ['0', '1', '0', '1']
+                                        - MAP.Map
+                                      - - &id002 [size, '0', '1', '0', '1']
+                                        - STRING.String
+                                      next:
+                                        args:
+                                        - - *id001
+                                          - MAP.Map
+                                        - - *id002
+                                          - STRING.String
+                                        next:
+                                          default: null
+                                          specializations:
+                                          - - '1'
+                                            - default: null
+                                              specializations:
+                                              - - Lbl'-LT-'function'-GT-'{}
+                                                - default: null
+                                                  specializations:
+                                                  - - Lbl'-LT-'fbody'-GT-'{}
+                                                    - default: null
+                                                      specializations:
+                                                      - - Lbl'-LT-'fname'-GT-'{}
+                                                        - default: fail
+                                                          specializations:
+                                                          - - kseq{}
+                                                            - default: fail
+                                                              specializations:
+                                                              - - dotk{}
+                                                                - default: fail
+                                                                  specializations:
+                                                                  - - inj{SortId{},
+                                                                      SortKItem{}}
+                                                                    - args:
+                                                                      - - &id003 [
+                                                                          '0', '0',
+                                                                          '0', '0',
+                                                                          '0', '0',
+                                                                          '1']
+                                                                        - STRING.String
+                                                                      - - ['0', '0',
+                                                                          '0', '0',
+                                                                          'SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                                                            SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                                                            SymbolP(dotk{},List())))))_val',
+                                                                          '0', '1',
+                                                                          '0', '1']
+                                                                        - STRING.String
+                                                                      next:
+                                                                        default: null
+                                                                        specializations:
+                                                                        - - '1'
+                                                                          - action:
+                                                                            - 240
+                                                                            - - - [
+                                                                                  '1',
+                                                                                  '1']
+                                                                                - STRING.String
+                                                                              - - [
+                                                                                  '0',
+                                                                                  '3',
+                                                                                  '0',
+                                                                                  '1']
+                                                                                - LIST.List
+                                                                              - - [
+                                                                                  'SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                                                                    SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                                                                    SymbolP(dotk{},List())))))_rem',
+                                                                                  '0',
+                                                                                  '1',
+                                                                                  '0',
+                                                                                  '1']
+                                                                                - MAP.Map
+                                                                              - - [
+                                                                                  '1',
+                                                                                  '0',
+                                                                                  '1']
+                                                                                - STRING.String
+                                                                              - - [
+                                                                                  '0',
+                                                                                  '1',
+                                                                                  'SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                                                                    SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                                                                    SymbolP(dotk{},List())))))_val',
+                                                                                  '0',
+                                                                                  '1',
+                                                                                  '0',
+                                                                                  '1']
+                                                                                - STRING.String
+                                                                              - - [
+                                                                                  '1',
+                                                                                  '0',
+                                                                                  '0',
+                                                                                  '0',
+                                                                                  '1']
+                                                                                - STRING.String
+                                                                              - - [
+                                                                                  '0',
+                                                                                  '2',
+                                                                                  '0',
+                                                                                  '1']
+                                                                                - MAP.Map
+                                                                              - - [
+                                                                                  '0',
+                                                                                  '0',
+                                                                                  '0',
+                                                                                  '0',
+                                                                                  '0',
+                                                                                  '0',
+                                                                                  '1']
+                                                                                - STRING.String
+                                                                          - []
+                                                                        - - '0'
+                                                                          - fail
+                                                                          - []
+                                                                        bitwidth: 1
+                                                                        sort: BOOL.Bool
+                                                                        occurrence: [
+                                                                          eq, '0',
+                                                                          '0', '0',
+                                                                          '0', '0',
+                                                                          '0', '1',
+                                                                          and, '0',
+                                                                          '0', '0',
+                                                                          '0', 'SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                                                            SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                                                            SymbolP(dotk{},List())))))_val',
+                                                                          '0', '1',
+                                                                          '0', '1']
+                                                                      function: hook_KEQUAL_eq
+                                                                      sort: BOOL.Bool
+                                                                      occurrence: [
+                                                                        eq, '0', '0',
+                                                                        '0', '0',
+                                                                        '0', '0',
+                                                                        '1', and,
+                                                                        '0', '0',
+                                                                        '0', '0',
+                                                                        'SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                                                          SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                                                          SymbolP(dotk{},List())))))_val',
+                                                                        '0', '1',
+                                                                        '0', '1']
+                                                                    - [STRING.String]
+                                                                  sort: STRING.String
+                                                                  occurrence: ['0',
+                                                                    '0', '0', 'SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                                                      SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                                                      SymbolP(dotk{},List())))))_val',
+                                                                    '0', '1', '0',
+                                                                    '1']
+                                                                - []
+                                                              sort: STRING.String
+                                                              occurrence: ['1', '0',
+                                                                '0', 'SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                                                  SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                                                  SymbolP(dotk{},List())))))_val',
+                                                                '0', '1', '0', '1']
+                                                            - [STRING.String, STRING.String]
+                                                          sort: STRING.String
+                                                          occurrence: ['0', '0', 'SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                                              SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                                              SymbolP(dotk{},List())))))_val',
+                                                            '0', '1', '0', '1']
+                                                        - [STRING.String]
+                                                      sort: STRING.String
+                                                      occurrence: ['0', 'SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                                          SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                                          SymbolP(dotk{},List())))))_val',
+                                                        '0', '1', '0', '1']
+                                                    - [STRING.String]
+                                                  sort: STRING.String
+                                                  occurrence: ['1', 'SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                                      SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                                      SymbolP(dotk{},List())))))_val',
+                                                    '0', '1', '0', '1']
+                                                - [STRING.String, STRING.String]
+                                              sort: STRING.String
+                                              occurrence: ['SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                                  SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                                  SymbolP(dotk{},List())))))_val',
+                                                '0', '1', '0', '1']
+                                            - [STRING.String, MAP.Map, MAP.Map]
+                                          - - '0'
+                                            - fail
+                                            - [MAP.Map]
+                                          isnull: true
+                                          sort: STRING.String
+                                          occurrence: ['SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                              SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                              SymbolP(dotk{},List())))))_val', '0',
+                                            '1', '0', '1']
+                                        function: hook_MAP_remove
+                                        sort: MAP.Map
+                                        occurrence: ['SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                            SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                            SymbolP(dotk{},List())))))_rem', '0',
+                                          '1', '0', '1']
+                                      function: hook_MAP_lookup_null
+                                      sort: STRING.String
+                                      occurrence: ['SymbolP(Lbl''-LT-''fname''-GT-''{},List(SymbolP(kseq{},List(SymbolP(inj{SortId{},
+                                          SortKItem{}},List(VariableP(Some(Num(0,Num(0,Num(0,Num(0,Num(0,Num(0,Num(1,Base())))))))),StringS()))),
+                                          SymbolP(dotk{},List())))))_val', '0', '1',
+                                        '0', '1']
+                                    pattern:
+                                      args:
+                                      - args:
+                                        - args:
+                                          - hook: STRING.String
+                                            occurrence: *id003
+                                          constructor: inj{SortId{}, SortKItem{}}
+                                        - args: []
+                                          constructor: dotk{}
+                                        constructor: kseq{}
+                                      constructor: Lbl'-LT-'fname'-GT-'{}
+                                    occurrence: *id002
+                                    sort: STRING.String
+                                  - [STRING.String]
+                                sort: STRING.String
+                                occurrence: ['0', '0', '0', '0', '0', '1']
+                              - [STRING.String]
+                            - - inj{SortInt{}, SortKItem{}}
+                              - fail
+                              - [INT.Int]
+                            - - inj{SortId{}, SortKItem{}}
+                              - fail
+                              - [STRING.String]
+                            sort: STRING.String
+                            occurrence: ['0', '0', '0', '0', '1']
+                          - [STRING.String, STRING.String]
+                        sort: STRING.String
+                        occurrence: ['0', '0', '0', '1']
+                      - [STRING.String]
+                    sort: STRING.String
+                    occurrence: ['0', '0', '1']
+                  - [MAP.Map]
+                sort: STRING.String
+                occurrence: ['1', '0', '1']
+              - [MAP.Map]
+            sort: STRING.String
+            occurrence: ['2', '0', '1']
+          - [LIST.List]
+        sort: STRING.String
+        occurrence: ['3', '0', '1']
+      - [STRING.String, STRING.String, STRING.String, STRING.String]
+    sort: STRING.String
+    occurrence: ['0', '1']
+  - [STRING.String, STRING.String]
+sort: STRING.String
+occurrence: ['1']
