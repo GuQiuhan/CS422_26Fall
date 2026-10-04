@@ -1,0 +1,2 @@
+letrec pow b = lambda e . if e <= 0 then 1 else (b * (pow b (e + -1)))
+in (pow 2 10)

@@ -1,0 +1,9 @@
+<T>
+  <k>
+    stmt ~> .K
+  </k>
+  <tenv>
+    x |-> int
+    y |-> int
+  </tenv>
+</T>

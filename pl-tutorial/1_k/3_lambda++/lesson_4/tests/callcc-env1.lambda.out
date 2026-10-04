@@ -1,0 +1,11 @@
+  {
+    V:K
+  #Equals
+    3 ~> .K
+  }
+#Or
+  {
+    V:K
+  #Equals
+    4 ~> .K
+  }

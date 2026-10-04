@@ -1,0 +1,5 @@
+letrec gcd a = lambda b .
+  if a <= 0 then b else
+  if b <= 0 then a else
+  if a <= b then (gcd a (b + (a * -1))) else (gcd (a + (b * -1)) b)
+in (gcd 84 36)
