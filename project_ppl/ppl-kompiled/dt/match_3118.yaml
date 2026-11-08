@@ -1,0 +1,69 @@
+default: null
+specializations:
+- - Lbl'-LT-'generatedTop'-GT-'{}
+  - default: null
+    specializations:
+    - - Lbl'-LT-'T'-GT-'{}
+      - default: null
+        specializations:
+        - - Lbl'-LT-'order'-GT-'{}
+          - default: null
+            specializations:
+            - - Lbl'-LT-'pstate'-GT-'{}
+              - default: null
+                specializations:
+                - - Lbl'-LT-'k'-GT-'{}
+                  - default: fail
+                    specializations:
+                    - - kseq{}
+                      - default: fail
+                        specializations:
+                        - - Lbl'Hash'afterThen'LParUndsCommUndsCommUndsCommUndsRParUnds'PPL'Unds'KItem'Unds'BExp'Unds'Map'Unds'List'Unds'Block{}
+                          - action:
+                            - 3118
+                            - - - ['1', '1']
+                                - STRING.String
+                              - - ['1', '0', '0', '0', '1']
+                                - STRING.String
+                              - - ['3', '0', '1']
+                                - STRING.String
+                              - - ['4', '0', '1']
+                                - STRING.String
+                              - - ['5', '0', '1']
+                                - STRING.String
+                              - - ['6', '0', '1']
+                                - STRING.String
+                              - - ['0', '0', '0', '0', '0', '1']
+                                - STRING.String
+                              - - ['2', '0', '0', '0', '0', '1']
+                                - LIST.List
+                              - - ['0', '2', '0', '1']
+                                - LIST.List
+                              - - ['3', '0', '0', '0', '0', '1']
+                                - STRING.String
+                              - - ['1', '0', '0', '0', '0', '1']
+                                - MAP.Map
+                              - - ['0', '1', '0', '1']
+                                - MAP.Map
+                          - [STRING.String, MAP.Map, LIST.List, STRING.String]
+                        sort: STRING.String
+                        occurrence: ['0', '0', '0', '0', '1']
+                      - [STRING.String, STRING.String]
+                    sort: STRING.String
+                    occurrence: ['0', '0', '0', '1']
+                  - [STRING.String]
+                sort: STRING.String
+                occurrence: ['0', '0', '1']
+              - [MAP.Map]
+            sort: STRING.String
+            occurrence: ['1', '0', '1']
+          - [LIST.List]
+        sort: STRING.String
+        occurrence: ['2', '0', '1']
+      - [STRING.String, STRING.String, STRING.String, STRING.String, STRING.String,
+        STRING.String, STRING.String]
+    sort: STRING.String
+    occurrence: ['0', '1']
+  - [STRING.String, STRING.String]
+sort: STRING.String
+occurrence: ['1']

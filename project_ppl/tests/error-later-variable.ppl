@@ -1,0 +1,5 @@
+// Rejected: x would depend on y, which was introduced after x, so the
+// dependency graph would have the cycle x -> y -> x.
+x ~ Normal(0, 1)
+y ~ Normal(x, 1)
+x := y

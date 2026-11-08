@@ -1,0 +1,25 @@
+<T>
+  <k>
+    error ( "assumption violated: after the if, a kernel depends on a variable introduced after it" , .K ) ~> .K
+  </k>
+  <pstate>
+    x |-> ker ( SetItem ( y ) , branch ( y > 0 , delta ( 1 ) , sample ( Normal , 0 , 1 , .Exps ) ) )
+    y |-> ker ( .Set , sample ( Normal , 0 , 1 , .Exps ) )
+  </pstate>
+  <order>
+    ListItem ( x )
+    ListItem ( y )
+  </order>
+  <snapshots>
+    .Map
+  </snapshots>
+  <nextSnapshot>
+    0
+  </nextSnapshot>
+  <grid>
+    200
+  </grid>
+  <results>
+    .List
+  </results>
+</T>

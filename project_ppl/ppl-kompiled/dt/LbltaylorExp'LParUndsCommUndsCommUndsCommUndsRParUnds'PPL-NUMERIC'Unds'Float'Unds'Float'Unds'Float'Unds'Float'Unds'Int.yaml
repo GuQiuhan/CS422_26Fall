@@ -1,0 +1,53 @@
+args:
+- - &id001 ['4']
+  - INT.Int
+next:
+  default: null
+  specializations:
+  - - '1'
+    - action:
+      - 3478
+      - - - *id001
+          - INT.Int
+        - - &id002 ['1']
+          - FLOAT.Float
+        - - &id004 ['2']
+          - FLOAT.Float
+        - - &id003 ['3']
+          - FLOAT.Float
+    - []
+  - - '0'
+    - args:
+      - - *id001
+        - INT.Int
+      next:
+        default: null
+        specializations:
+        - - '1'
+          - action:
+            - 3479
+            - - - *id002
+                - FLOAT.Float
+              - - *id003
+                - FLOAT.Float
+              - - *id001
+                - INT.Int
+              - - *id004
+                - FLOAT.Float
+          - []
+        - - '0'
+          - fail
+          - []
+        bitwidth: 1
+        sort: BOOL.Bool
+        occurrence: &id005 [side_condition_3479]
+      function: side_condition_3479
+      sort: BOOL.Bool
+      occurrence: *id005
+    - []
+  bitwidth: 1
+  sort: BOOL.Bool
+  occurrence: &id006 [side_condition_3478]
+function: side_condition_3478
+sort: BOOL.Bool
+occurrence: *id006

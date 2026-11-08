@@ -1,0 +1,14 @@
+default: null
+specializations:
+- - Lblsnap'LParUndsCommUndsCommUndsRParUnds'PPL-KERNELS'Unds'Snap'Unds'Map'Unds'List'Unds'BExp{}
+  - action:
+    - 3398
+    - - - ['1', '1']
+        - LIST.List
+      - - ['2', '1']
+        - STRING.String
+      - - ['0', '1']
+        - MAP.Map
+  - [MAP.Map, LIST.List, STRING.String]
+sort: STRING.String
+occurrence: ['1']

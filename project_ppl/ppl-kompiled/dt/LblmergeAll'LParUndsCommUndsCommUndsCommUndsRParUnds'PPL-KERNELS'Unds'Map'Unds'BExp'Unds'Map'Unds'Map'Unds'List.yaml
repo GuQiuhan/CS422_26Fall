@@ -1,0 +1,74 @@
+args:
+- - &id001 ['4']
+  - LIST.List
+next:
+  default: &id005
+    args:
+    - - *id001
+      - LIST.List
+    - - [lit, '0', MINT.MInt 64]
+      - MINT.MInt 64
+    next:
+      default: fail
+      specializations:
+      - - inj{SortId{}, SortKItem{}}
+        - args:
+          - - *id001
+            - LIST.List
+          - - [lit, '1', MINT.MInt 64]
+            - MINT.MInt 64
+          - - [lit, '0', MINT.MInt 64]
+            - MINT.MInt 64
+          next:
+            action:
+            - 3383
+            - - - &id002 ['1']
+                - STRING.String
+              - - ['1', '4']
+                - LIST.List
+              - - &id003 ['2']
+                - MAP.Map
+              - - &id004 ['3']
+                - MAP.Map
+              - - ['0', '0', '4']
+                - STRING.String
+          function: hook_LIST_range_long
+          sort: LIST.List
+          occurrence: ['1', '4']
+        - [STRING.String]
+      sort: STRING.String
+      occurrence: ['0', '4']
+    function: hook_LIST_get_long
+    sort: STRING.String
+    occurrence: ['0', '4']
+  specializations:
+  - - '0'
+    - args:
+      - - *id001
+        - LIST.List
+      - - [lit, '0', MINT.MInt 64]
+        - MINT.MInt 64
+      - - [lit, '0', MINT.MInt 64]
+        - MINT.MInt 64
+      next:
+        action:
+        - 3384
+        - - - *id002
+            - STRING.String
+          - - *id003
+            - MAP.Map
+          - - *id004
+            - MAP.Map
+      function: hook_LIST_range_long
+      sort: LIST.List
+      occurrence: ['0', '4']
+    - []
+  - - '1'
+    - *id005
+    - [STRING.String]
+  bitwidth: 64
+  sort: MINT.MInt 64
+  occurrence: &id006 [size, '4']
+function: hook_LIST_size_long
+sort: MINT.MInt 64
+occurrence: *id006

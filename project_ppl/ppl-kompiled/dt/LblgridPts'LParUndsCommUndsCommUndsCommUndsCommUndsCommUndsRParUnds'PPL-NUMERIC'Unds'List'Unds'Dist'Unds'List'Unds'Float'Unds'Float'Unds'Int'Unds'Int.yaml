@@ -1,0 +1,65 @@
+args:
+- - &id001 ['5']
+  - INT.Int
+- - &id002 ['6']
+  - INT.Int
+next:
+  default: null
+  specializations:
+  - - '1'
+    - action:
+      - 3239
+      - - - &id003 ['1']
+          - STRING.String
+        - - &id006 ['4']
+          - FLOAT.Float
+        - - *id001
+          - INT.Int
+        - - &id005 ['3']
+          - FLOAT.Float
+        - - *id002
+          - INT.Int
+        - - &id004 ['2']
+          - LIST.List
+    - []
+  - - '0'
+    - args:
+      - - *id001
+        - INT.Int
+      - - *id002
+        - INT.Int
+      next:
+        default: null
+        specializations:
+        - - '1'
+          - action:
+            - 3240
+            - - - *id003
+                - STRING.String
+              - - *id004
+                - LIST.List
+              - - *id005
+                - FLOAT.Float
+              - - *id006
+                - FLOAT.Float
+              - - *id001
+                - INT.Int
+              - - *id002
+                - INT.Int
+          - []
+        - - '0'
+          - fail
+          - []
+        bitwidth: 1
+        sort: BOOL.Bool
+        occurrence: &id007 [side_condition_3240]
+      function: side_condition_3240
+      sort: BOOL.Bool
+      occurrence: *id007
+    - []
+  bitwidth: 1
+  sort: BOOL.Bool
+  occurrence: &id008 [side_condition_3239]
+function: side_condition_3239
+sort: BOOL.Bool
+occurrence: *id008

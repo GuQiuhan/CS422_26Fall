@@ -1,0 +1,26 @@
+<T>
+  <k>
+    error ( "assumption violated: depends on variable(s) introduced after it" , ListItem ( x )
+    ListItem ( SetItem ( y ) ) ~> .K ) ~> .K
+  </k>
+  <pstate>
+    x |-> ker ( .Set , sample ( Normal , 0 , 1 , .Exps ) )
+    y |-> ker ( SetItem ( x ) , sample ( Normal , x , 1 , .Exps ) )
+  </pstate>
+  <order>
+    ListItem ( x )
+    ListItem ( y )
+  </order>
+  <snapshots>
+    .Map
+  </snapshots>
+  <nextSnapshot>
+    0
+  </nextSnapshot>
+  <grid>
+    200
+  </grid>
+  <results>
+    .List
+  </results>
+</T>

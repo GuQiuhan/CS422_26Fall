@@ -1,0 +1,124 @@
+args:
+- - &id001 ['1']
+  - STRING.String
+- - &id002 ['2']
+  - LIST.List
+next:
+  default: null
+  specializations:
+  - - '1'
+    - action:
+      - 3238
+      - - - *id001
+          - STRING.String
+        - - &id003 ['3']
+          - INT.Int
+        - - *id002
+          - LIST.List
+    - []
+  - - '0'
+    - default: fail
+      specializations:
+      - - LblPareto'Unds'PPL-SYNTAX'Unds'Dist{}
+        - args:
+          - - *id002
+            - LIST.List
+          next:
+            default: fail
+            specializations:
+            - - '0'
+              - fail
+              - []
+            - - '1'
+              - fail
+              - [STRING.String]
+            - - '2'
+              - args:
+                - - *id002
+                  - LIST.List
+                - - [lit, '1', MINT.MInt 64]
+                  - MINT.MInt 64
+                next:
+                  args:
+                  - - *id002
+                    - LIST.List
+                  - - [lit, '0', MINT.MInt 64]
+                    - MINT.MInt 64
+                  next:
+                    default: fail
+                    specializations:
+                    - - inj{SortFloat{}, SortKItem{}}
+                      - default: fail
+                        specializations:
+                        - - inj{SortFloat{}, SortKItem{}}
+                          - args:
+                            - - *id002
+                              - LIST.List
+                            - - [lit, '2', MINT.MInt 64]
+                              - MINT.MInt 64
+                            - - [lit, '0', MINT.MInt 64]
+                              - MINT.MInt 64
+                            next:
+                              args:
+                              - - *id001
+                                - STRING.String
+                              - - *id002
+                                - LIST.List
+                              next:
+                                default: null
+                                specializations:
+                                - - '1'
+                                  - action:
+                                    - 3237
+                                    - - - *id001
+                                        - STRING.String
+                                      - - *id002
+                                        - LIST.List
+                                      - - ['0', '1', '2']
+                                        - FLOAT.Float
+                                      - - ['0', '0', '2']
+                                        - FLOAT.Float
+                                      - - *id003
+                                        - INT.Int
+                                  - []
+                                - - '0'
+                                  - fail
+                                  - []
+                                bitwidth: 1
+                                sort: BOOL.Bool
+                                occurrence: &id004 [side_condition_3237]
+                              function: side_condition_3237
+                              sort: BOOL.Bool
+                              occurrence: *id004
+                            function: hook_LIST_range_long
+                            sort: LIST.List
+                            occurrence: ['2', '2']
+                          - [FLOAT.Float]
+                        sort: STRING.String
+                        occurrence: ['0', '2']
+                      - [FLOAT.Float]
+                    sort: STRING.String
+                    occurrence: ['1', '2']
+                  function: hook_LIST_get_long
+                  sort: STRING.String
+                  occurrence: ['0', '2']
+                function: hook_LIST_get_long
+                sort: STRING.String
+                occurrence: ['1', '2']
+              - [STRING.String, STRING.String]
+            bitwidth: 64
+            sort: MINT.MInt 64
+            occurrence: &id005 [size, '2']
+          function: hook_LIST_size_long
+          sort: MINT.MInt 64
+          occurrence: *id005
+        - []
+      sort: STRING.String
+      occurrence: *id001
+    - []
+  bitwidth: 1
+  sort: BOOL.Bool
+  occurrence: &id006 [side_condition_3238]
+function: side_condition_3238
+sort: BOOL.Bool
+occurrence: *id006

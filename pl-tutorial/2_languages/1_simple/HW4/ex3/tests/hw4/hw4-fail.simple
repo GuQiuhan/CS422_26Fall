@@ -1,0 +1,10 @@
+// Should be rejected: the exception thrown inside the catch block is NOT
+// caught by that same try-catch (a handler does not protect itself), and
+// main has no throws clause, so the int could escape uncaught.
+void main() {
+  try {
+    throw 1;
+  } catch(int x) {
+    throw x + 1;
+  }
+}

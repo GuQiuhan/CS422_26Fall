@@ -26,6 +26,7 @@ module LAMBDA-SYNTAX
   rule letrec F:Id X = E in E' => let F = mu F . lambda X . E in E'
 
   syntax Id ::= "$x" [token] | "$y" [token]
+  // mu with substitution
   rule mu X . E
     => (lambda $x . ((lambda X . E) (lambda $y . ($x $x $y))))
        (lambda $x . ((lambda X . E) (lambda $y . ($x $x $y))))

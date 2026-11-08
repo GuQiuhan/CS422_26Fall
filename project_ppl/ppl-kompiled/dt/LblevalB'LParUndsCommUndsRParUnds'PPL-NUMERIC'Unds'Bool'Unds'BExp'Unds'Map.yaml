@@ -1,0 +1,104 @@
+default: null
+specializations:
+- - Lbl'BangUndsUnds'PPL-SYNTAX'Unds'BExp'Unds'BExp{}
+  - action:
+    - 3204
+    - - - ['0', '1']
+        - STRING.String
+      - - &id001 ['2']
+        - MAP.Map
+  - [STRING.String]
+- - Lbl'UndsBangEqlsUndsUnds'PPL-SYNTAX'Unds'BExp'Unds'Exp'Unds'Exp{}
+  - action:
+    - 3205
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+      - - *id001
+        - MAP.Map
+  - [STRING.String, STRING.String]
+- - Lbl'UndsAnd-And-UndsUnds'PPL-SYNTAX'Unds'BExp'Unds'BExp'Unds'BExp{}
+  - action:
+    - 3206
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+      - - *id001
+        - MAP.Map
+  - [STRING.String, STRING.String]
+- - Lbl'Unds-LT-EqlsUndsUnds'PPL-SYNTAX'Unds'BExp'Unds'Exp'Unds'Exp{}
+  - action:
+    - 3207
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+      - - *id001
+        - MAP.Map
+  - [STRING.String, STRING.String]
+- - Lbl'Unds-LT-UndsUnds'PPL-SYNTAX'Unds'BExp'Unds'Exp'Unds'Exp{}
+  - action:
+    - 3208
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+      - - *id001
+        - MAP.Map
+  - [STRING.String, STRING.String]
+- - Lbl'UndsEqlsEqlsUndsUnds'PPL-SYNTAX'Unds'BExp'Unds'Exp'Unds'Exp{}
+  - action:
+    - 3209
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+      - - *id001
+        - MAP.Map
+  - [STRING.String, STRING.String]
+- - Lbl'Unds-GT-EqlsUndsUnds'PPL-SYNTAX'Unds'BExp'Unds'Exp'Unds'Exp{}
+  - action:
+    - 3210
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+      - - *id001
+        - MAP.Map
+  - [STRING.String, STRING.String]
+- - Lbl'Unds-GT-UndsUnds'PPL-SYNTAX'Unds'BExp'Unds'Exp'Unds'Exp{}
+  - action:
+    - 3211
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+      - - *id001
+        - MAP.Map
+  - [STRING.String, STRING.String]
+- - Lbl'UndsPipePipeUndsUnds'PPL-SYNTAX'Unds'BExp'Unds'BExp'Unds'BExp{}
+  - action:
+    - 3212
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+      - - *id001
+        - MAP.Map
+  - [STRING.String, STRING.String]
+- - Lblfalse'Unds'PPL-SYNTAX'Unds'BExp{}
+  - action:
+    - 3213
+    - - - *id001
+        - MAP.Map
+  - []
+- - Lbltrue'Unds'PPL-SYNTAX'Unds'BExp{}
+  - action:
+    - 3214
+    - - - *id001
+        - MAP.Map
+  - []
+sort: STRING.String
+occurrence: ['1']

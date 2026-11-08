@@ -1,0 +1,27 @@
+<T>
+  <k>
+    .K
+  </k>
+  <pstate>
+    x |-> ker ( .Set , sample ( Normal , 0 , 1 , .Exps ) )
+    y |-> ker ( SetItem ( x ) , sample ( Normal , x , 1 , .Exps ) )
+  </pstate>
+  <order>
+    ListItem ( x )
+    ListItem ( y )
+  </order>
+  <snapshots>
+    .Map
+  </snapshots>
+  <nextSnapshot>
+    0
+  </nextSnapshot>
+  <grid>
+    200
+  </grid>
+  <results>
+    ListItem ( Ex ( x * y ) = 0.99999999999992029e0 )
+    ListItem ( Ex ( y * y ) = 0.19999999999998399e1 )
+    ListItem ( Pr ( x + y > 1 ) = 0.32432268870739783e0 )
+  </results>
+</T>

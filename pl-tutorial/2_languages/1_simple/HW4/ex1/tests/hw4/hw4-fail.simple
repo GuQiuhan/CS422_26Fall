@@ -1,0 +1,7 @@
+// Should fail: break outside of any loop.  There is no loop frame to pop,
+// so the execution gets stuck right after printing "before".
+function main() {
+  print("before\n");
+  break;
+  print("Wrong: after the break\n");
+}

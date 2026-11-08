@@ -1,0 +1,5 @@
+// Rejected: after the if, x's kernel would depend on the guard variable y,
+// which was introduced after x (if-merge: dep = dep(B) U dep(K1) U dep(K2)).
+x ~ Normal(0, 1)
+y ~ Normal(0, 1)
+if y > 0 then { x := 1 } else { skip }

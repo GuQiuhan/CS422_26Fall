@@ -1,0 +1,7 @@
+// macros
+// rule `_=__PPL-SYNTAX_Stmt_Id_Exp`(X,E)=>`_:=__PPL-SYNTAX_Stmt_Id_Exp`(X,E) requires #token("true","Bool") ensures #token("true","Bool") [UNIQUE_ID(54f360e31890f4a7c4d3426b847eaa3b6a8ea459d552adaab7b347a0ce8bca67), macro, org.kframework.attributes.Location(Location(68,8,68,30)), org.kframework.attributes.Source(Source(/Users/gqh/Desktop/CS422/project_ppl/ppl.k)), org.kframework.definition.Production(syntax #RuleContent ::= #RuleBody [symbol(#ruleNoConditions)])]
+  axiom{R} \equals{SortStmt{},R} (
+    Lbl'UndsEqlsUndsUnds'PPL-SYNTAX'Unds'Stmt'Unds'Id'Unds'Exp{}(VarX:SortId{},VarE:SortExp{}),
+    Lbl'UndsColnEqlsUndsUnds'PPL-SYNTAX'Unds'Stmt'Unds'Id'Unds'Exp{}(VarX:SortId{},VarE:SortExp{}))
+  [UNIQUE'Unds'ID{}("54f360e31890f4a7c4d3426b847eaa3b6a8ea459d552adaab7b347a0ce8bca67"), macro{}(), org'Stop'kframework'Stop'attributes'Stop'Location{}("Location(68,8,68,30)"), org'Stop'kframework'Stop'attributes'Stop'Source{}("Source(/Users/gqh/Desktop/CS422/project_ppl/ppl.k)"), priority{}("50")]
+

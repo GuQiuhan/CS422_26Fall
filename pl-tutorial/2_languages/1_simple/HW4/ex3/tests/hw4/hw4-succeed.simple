@@ -1,0 +1,27 @@
+// Should type check.  Function types with throws clauses are used as
+// parameter types (higher-order), a function with several throws types is
+// called where all of them are caught/declared, and a catch block throws a
+// new exception that only the outer context handles.
+int risky(int x) throws string, bool {
+  if (x > 0) { throw "positive"; }
+  if (x < 0) { throw false; }
+  return 0;
+}
+
+int apply(int->int throws string, bool g, int v) throws bool {
+  try {
+    return g(v);
+  } catch(string s) {
+    print("apply caught ", s, "\n");
+    throw true;
+  }
+  return 1;
+}
+
+void main() {
+  try {
+    apply(risky, 5);
+  } catch(bool b) {
+    print("main caught a bool\n");
+  }
+}

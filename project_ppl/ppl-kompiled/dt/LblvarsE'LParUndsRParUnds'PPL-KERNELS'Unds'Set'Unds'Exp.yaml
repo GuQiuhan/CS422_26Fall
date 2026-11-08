@@ -1,0 +1,66 @@
+default: null
+specializations:
+- - Lbl-'UndsUnds'PPL-SYNTAX'Unds'Exp'Unds'Exp{}
+  - action:
+    - 3504
+    - - - ['0', '1']
+        - STRING.String
+  - [STRING.String]
+- - LblReLU'LParUndsRParUnds'PPL-SYNTAX'Unds'Exp'Unds'Exp{}
+  - action:
+    - 3505
+    - - - ['0', '1']
+        - STRING.String
+  - [STRING.String]
+- - Lbl'UndsStarUndsUnds'PPL-SYNTAX'Unds'Exp'Unds'Exp'Unds'Exp{}
+  - action:
+    - 3506
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+  - [STRING.String, STRING.String]
+- - Lbl'UndsPlusUndsUnds'PPL-SYNTAX'Unds'Exp'Unds'Exp'Unds'Exp{}
+  - action:
+    - 3507
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+  - [STRING.String, STRING.String]
+- - Lbl'Unds'-'UndsUnds'PPL-SYNTAX'Unds'Exp'Unds'Exp'Unds'Exp{}
+  - action:
+    - 3508
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+  - [STRING.String, STRING.String]
+- - Lbl'UndsSlshUndsUnds'PPL-SYNTAX'Unds'Exp'Unds'Exp'Unds'Exp{}
+  - action:
+    - 3509
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+  - [STRING.String, STRING.String]
+- - inj{SortFloat{}, SortExp{}}
+  - action:
+    - 3510
+    - - - ['0', '1']
+        - FLOAT.Float
+  - [FLOAT.Float]
+- - inj{SortId{}, SortExp{}}
+  - action:
+    - 3511
+    - - - ['0', '1']
+        - STRING.String
+  - [STRING.String]
+- - inj{SortInt{}, SortExp{}}
+  - action:
+    - 3512
+    - - - ['0', '1']
+        - INT.Int
+  - [INT.Int]
+sort: STRING.String
+occurrence: ['1']

@@ -1,0 +1,15 @@
+// Should fail: no handler has the type of the thrown value (bool), so the
+// exception propagates past both handlers and the execution gets stuck.
+void main() {
+  print("before\n");
+  try {
+    try {
+      throw true;
+    } catch(int x) {
+      print("Wrong: int handler\n");
+    }
+  } catch(string s) {
+    print("Wrong: string handler\n");
+  }
+  print("Wrong: after the try\n");
+}

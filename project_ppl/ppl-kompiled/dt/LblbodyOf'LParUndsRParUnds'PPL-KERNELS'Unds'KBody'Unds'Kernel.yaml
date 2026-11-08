@@ -1,0 +1,12 @@
+default: null
+specializations:
+- - Lblker'LParUndsCommUndsRParUnds'PPL-KERNELS'Unds'Kernel'Unds'Set'Unds'KBody{}
+  - action:
+    - 3190
+    - - - ['0', '1']
+        - SET.Set
+      - - ['1', '1']
+        - STRING.String
+  - [SET.Set, STRING.String]
+sort: STRING.String
+occurrence: ['1']

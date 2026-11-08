@@ -1,0 +1,23 @@
+<T>
+  <k>
+    error ( "while is not supported yet (its semantics is not defined in the paper)" , .K ) ~> .K
+  </k>
+  <pstate>
+    x |-> ker ( .Set , delta ( 0 ) )
+  </pstate>
+  <order>
+    ListItem ( x )
+  </order>
+  <snapshots>
+    .Map
+  </snapshots>
+  <nextSnapshot>
+    0
+  </nextSnapshot>
+  <grid>
+    200
+  </grid>
+  <results>
+    .List
+  </results>
+</T>

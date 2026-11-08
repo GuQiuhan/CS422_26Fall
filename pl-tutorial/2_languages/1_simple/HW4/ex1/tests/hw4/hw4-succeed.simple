@@ -1,0 +1,31 @@
+// Should succeed.  Checks that:
+//  * continue in a for loop still runs the step (++i);
+//  * break/continue leave the try blocks entered inside the loop body, so
+//    the final "throw 42" is caught by the OUTER handler, not by a stale
+//    inner one;
+//  * continue restores the environment, so the loop condition sees the
+//    outer n, not the n declared in the body.
+function main() {
+  try {
+    for (var i = 0; i < 10; ++i) {
+      try {
+        if (i % 2 == 0) { continue; }
+        if (i == 5) { break; }
+        print("i = ", i, "\n");
+      } catch(e) {
+        print("Wrong: inner handler caught ", e, "\n");
+      }
+    }
+    throw 42;
+  } catch(e) {
+    print("outer handler caught ", e, "\n");
+  }
+  var n = 0;
+  while (++n <= 3) {
+    var n = 100;
+    print(n, " ");
+    continue;
+    print("Wrong!\n");
+  }
+  print("n = ", n, "\n");
+}

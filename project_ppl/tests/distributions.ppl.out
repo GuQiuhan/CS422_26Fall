@@ -1,0 +1,44 @@
+<T>
+  <k>
+    .K
+  </k>
+  <pstate>
+    a |-> ker ( .Set , sample ( Normal , 1 , 4 , .Exps ) )
+    b |-> ker ( .Set , sample ( Uniform , 1 , 3 , .Exps ) )
+    c |-> ker ( .Set , sample ( Laplace , 1 , 2 , .Exps ) )
+    d |-> ker ( .Set , sample ( Logistic , -0.10000000000000000e1 , 1 , .Exps ) )
+    e |-> ker ( .Set , sample ( Exponential , 2 , .Exps ) )
+    f |-> ker ( .Set , sample ( Gamma , 2 , 3 , .Exps ) )
+    g |-> ker ( .Set , sample ( Pareto , 1 , 3 , .Exps ) )
+    h |-> ker ( .Set , sample ( Student-t , 5 , .Exps ) )
+  </pstate>
+  <order>
+    ListItem ( a )
+    ListItem ( b )
+    ListItem ( c )
+    ListItem ( d )
+    ListItem ( e )
+    ListItem ( f )
+    ListItem ( g )
+    ListItem ( h )
+  </order>
+  <snapshots>
+    .Map
+  </snapshots>
+  <nextSnapshot>
+    0
+  </nextSnapshot>
+  <grid>
+    200
+  </grid>
+  <results>
+    ListItem ( Ex ( a ) = 0.99999999999999967e0 )
+    ListItem ( Ex ( b ) = 0.19999999999999987e1 )
+    ListItem ( Ex ( c ) = 0.99999999999999789e0 )
+    ListItem ( Ex ( d ) = -0.10000000000000113e1 )
+    ListItem ( Ex ( e ) = 0.50093714862433536e0 )
+    ListItem ( Ex ( f ) = 0.59868457008912124e1 )
+    ListItem ( Ex ( g ) = 0.15000171673987728e1 )
+    ListItem ( Ex ( h ) = 0.64621999584228777e-16 )
+  </results>
+</T>

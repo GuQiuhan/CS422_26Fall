@@ -1,0 +1,35 @@
+<T>
+  <k>
+    .K
+  </k>
+  <pstate>
+    x |-> ker ( .Set , cond ( 0 , x ) )
+    y |-> ker ( SetItem ( x ) , cond ( 0 , y ) )
+    z |-> ker ( SetItem ( x )
+    SetItem ( y ) , cond ( 0 , z ) )
+  </pstate>
+  <order>
+    ListItem ( x )
+    ListItem ( y )
+    ListItem ( z )
+  </order>
+  <snapshots>
+    0 |-> snap ( x |-> ker ( .Set , sample ( Normal , 0 , 1 , .Exps ) )
+    y |-> ker ( SetItem ( x ) , sample ( Normal , x , 1 , .Exps ) )
+    z |-> ker ( SetItem ( y ) , delta ( ReLU ( y ) ) ) , ListItem ( x )
+    ListItem ( y )
+    ListItem ( z ) , z > 1 )
+  </snapshots>
+  <nextSnapshot>
+    1
+  </nextSnapshot>
+  <grid>
+    200
+  </grid>
+  <results>
+    ListItem ( Pr ( z > 1 ) = 0.23972076150350363e0 )
+    ListItem ( Ex ( y ) = 0.17531131105467374e-15 )
+    ListItem ( Pr ( z > 1 ) = 0.99999999999999967e0 )
+    ListItem ( Ex ( x ) = 0.91652592130433286e0 )
+  </results>
+</T>

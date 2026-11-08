@@ -1,0 +1,26 @@
+<T>
+  <k>
+    .K
+  </k>
+  <pstate>
+    x |-> ker ( .Set , delta ( 3 ) )
+    y |-> ker ( SetItem ( x ) , delta ( x + 1 ) )
+  </pstate>
+  <order>
+    ListItem ( x )
+    ListItem ( y )
+  </order>
+  <snapshots>
+    .Map
+  </snapshots>
+  <nextSnapshot>
+    0
+  </nextSnapshot>
+  <grid>
+    200
+  </grid>
+  <results>
+    ListItem ( Ex ( y ) = 0.99999999999999967e0 )
+    ListItem ( Ex ( y ) = 0.40000000000000000e1 )
+  </results>
+</T>

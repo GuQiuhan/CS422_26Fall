@@ -1,0 +1,84 @@
+default: null
+specializations:
+- - Lbl-'UndsUnds'PPL-SYNTAX'Unds'Exp'Unds'Exp{}
+  - action:
+    - 3215
+    - - - ['0', '1']
+        - STRING.String
+      - - &id001 ['2']
+        - MAP.Map
+  - [STRING.String]
+- - LblReLU'LParUndsRParUnds'PPL-SYNTAX'Unds'Exp'Unds'Exp{}
+  - action:
+    - 3216
+    - - - ['0', '1']
+        - STRING.String
+      - - *id001
+        - MAP.Map
+  - [STRING.String]
+- - Lbl'UndsStarUndsUnds'PPL-SYNTAX'Unds'Exp'Unds'Exp'Unds'Exp{}
+  - action:
+    - 3217
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+      - - *id001
+        - MAP.Map
+  - [STRING.String, STRING.String]
+- - Lbl'UndsPlusUndsUnds'PPL-SYNTAX'Unds'Exp'Unds'Exp'Unds'Exp{}
+  - action:
+    - 3218
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+      - - *id001
+        - MAP.Map
+  - [STRING.String, STRING.String]
+- - Lbl'Unds'-'UndsUnds'PPL-SYNTAX'Unds'Exp'Unds'Exp'Unds'Exp{}
+  - action:
+    - 3219
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+      - - *id001
+        - MAP.Map
+  - [STRING.String, STRING.String]
+- - Lbl'UndsSlshUndsUnds'PPL-SYNTAX'Unds'Exp'Unds'Exp'Unds'Exp{}
+  - action:
+    - 3220
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - STRING.String
+      - - *id001
+        - MAP.Map
+  - [STRING.String, STRING.String]
+- - inj{SortFloat{}, SortExp{}}
+  - action:
+    - 3221
+    - - - *id001
+        - MAP.Map
+      - - ['0', '1']
+        - FLOAT.Float
+  - [FLOAT.Float]
+- - inj{SortId{}, SortExp{}}
+  - action:
+    - 3222
+    - - - *id001
+        - MAP.Map
+      - - ['0', '1']
+        - STRING.String
+  - [STRING.String]
+- - inj{SortInt{}, SortExp{}}
+  - action:
+    - 3223
+    - - - *id001
+        - MAP.Map
+      - - ['0', '1']
+        - INT.Int
+  - [INT.Int]
+sort: STRING.String
+occurrence: ['1']

@@ -1,0 +1,3 @@
+// Rejected: the semantics of while is not defined yet.
+x := 0
+while x < 3 do { skip }

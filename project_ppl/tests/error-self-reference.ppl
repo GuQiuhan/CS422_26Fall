@@ -1,0 +1,4 @@
+// Rejected: the new kernel of x would depend on x itself, which violates
+// the paper's assumption.
+x ~ Normal(0, 1)
+x := x + 1

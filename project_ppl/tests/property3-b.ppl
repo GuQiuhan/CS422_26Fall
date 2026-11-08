@@ -1,0 +1,8 @@
+// Property (3), second probstate: dependency graph y -> x.
+// A different probstate (different kernels and dependencies) inducing the
+// SAME joint measure as property3-a.ppl, so all queries agree.
+y ~ Normal(0, 2)
+x ~ Normal(y / 2, 0.5)
+query mean(x * y)        // Cov(x, y) = 1
+query mean(y * y)        // Var(y) = 2
+query prob(x + y > 1)

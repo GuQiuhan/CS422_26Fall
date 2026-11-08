@@ -1,0 +1,8 @@
+// Should be rejected: a is declared twice in main's block.  The second
+// declaration hides inside a multi-variable declaration, which desugars
+// into separate declarations, after an unrelated inner block that also
+// declares a.
+void main() {
+  { int a = 1; }
+  int a = 2, b = 3, a = 4;
+}

@@ -1,0 +1,6 @@
+// Property (3), first probstate: dependency graph x -> y.
+x ~ Normal(0, 1)
+y ~ Normal(x, 1)
+query mean(x * y)        // Cov(x, y) = 1
+query mean(y * y)        // Var(y) = 2
+query prob(x + y > 1)

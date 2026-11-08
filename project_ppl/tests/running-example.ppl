@@ -1,0 +1,9 @@
+// The running example of the paper (Fig. 3), plus numeric queries.
+x ~ Normal(0, 1)
+y ~ Normal(x, 1)
+z = ReLU(y)
+query prob(z > 1)        // P(B) = 1 - Phi(1/sqrt(2)) ~ 0.2398
+query mean(y)            // 0
+observe (z > 1)
+query prob(z > 1)        // 1 after conditioning on B
+query mean(x)            // E[x | z > 1] = 0.9147

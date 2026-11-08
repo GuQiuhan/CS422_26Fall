@@ -1,0 +1,57 @@
+default: null
+specializations:
+- - Lbl'-LT-'generatedTop'-GT-'{}
+  - default: null
+    specializations:
+    - - Lbl'-LT-'T'-GT-'{}
+      - default: null
+        specializations:
+        - - Lbl'-LT-'k'-GT-'{}
+          - default: fail
+            specializations:
+            - - kseq{}
+              - default: fail
+                specializations:
+                - - LblrunBlock'LParUndsRParUnds'PPL'Unds'KItem'Unds'Block{}
+                  - default: fail
+                    specializations:
+                    - - Lbl'LBraUndsRBraUnds'PPL-SYNTAX'Unds'Block'Unds'Stmts{}
+                      - action:
+                        - 3142
+                        - - - ['1', '1']
+                            - STRING.String
+                          - - ['1', '0', '0', '0', '1']
+                            - STRING.String
+                          - - ['1', '0', '1']
+                            - STRING.String
+                          - - ['2', '0', '1']
+                            - STRING.String
+                          - - ['3', '0', '1']
+                            - STRING.String
+                          - - ['4', '0', '1']
+                            - STRING.String
+                          - - ['5', '0', '1']
+                            - STRING.String
+                          - - ['6', '0', '1']
+                            - STRING.String
+                          - - ['0', '0', '0', '0', '0', '0', '1']
+                            - STRING.String
+                      - [STRING.String]
+                    sort: STRING.String
+                    occurrence: ['0', '0', '0', '0', '0', '1']
+                  - [STRING.String]
+                sort: STRING.String
+                occurrence: ['0', '0', '0', '0', '1']
+              - [STRING.String, STRING.String]
+            sort: STRING.String
+            occurrence: ['0', '0', '0', '1']
+          - [STRING.String]
+        sort: STRING.String
+        occurrence: ['0', '0', '1']
+      - [STRING.String, STRING.String, STRING.String, STRING.String, STRING.String,
+        STRING.String, STRING.String]
+    sort: STRING.String
+    occurrence: ['0', '1']
+  - [STRING.String, STRING.String]
+sort: STRING.String
+occurrence: ['1']

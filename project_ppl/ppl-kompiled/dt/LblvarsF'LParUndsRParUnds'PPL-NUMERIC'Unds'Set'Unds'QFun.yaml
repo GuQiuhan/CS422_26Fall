@@ -1,0 +1,16 @@
+default: null
+specializations:
+- - Lblfexp'LParUndsRParUnds'PPL-NUMERIC'Unds'QFun'Unds'Exp{}
+  - action:
+    - 3515
+    - - - ['0', '1']
+        - STRING.String
+  - [STRING.String]
+- - Lblfind'LParUndsRParUnds'PPL-NUMERIC'Unds'QFun'Unds'BExp{}
+  - action:
+    - 3516
+    - - - ['0', '1']
+        - STRING.String
+  - [STRING.String]
+sort: STRING.String
+occurrence: ['1']

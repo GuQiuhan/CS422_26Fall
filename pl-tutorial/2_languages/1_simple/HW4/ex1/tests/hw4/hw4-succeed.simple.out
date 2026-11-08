@@ -1,0 +1,4 @@
+i = 1
+i = 3
+outer handler caught 42
+100 100 100 n = 4

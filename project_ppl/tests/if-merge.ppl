@@ -1,0 +1,10 @@
+// if-then-else: the two resulting probstates are merged by the guard.
+// y is defined differently on the two branches, so
+// K_y = branch(x < 0.5, delta(0), sample(Normal, x, 1)), dep = {x}.
+// w is assigned the same kernel on both branches, so the guard is not a
+// direct dependency of w.
+x ~ Uniform(0, 1)
+if x < 0.5 then { y := 0; w := 7 } else { y ~ Normal(x, 1); w := 7 }
+query mean(y)            // integral of x over (0.5, 1) = 0.375
+query mean(w)            // 7
+query prob(y == 0)       // 0.5

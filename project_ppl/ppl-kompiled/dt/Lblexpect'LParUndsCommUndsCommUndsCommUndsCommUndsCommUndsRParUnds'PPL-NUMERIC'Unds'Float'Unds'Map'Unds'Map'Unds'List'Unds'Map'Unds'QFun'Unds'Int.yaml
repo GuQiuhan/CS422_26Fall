@@ -1,0 +1,14 @@
+action:
+- 3231
+- - - ['5']
+    - STRING.String
+  - - ['6']
+    - INT.Int
+  - - ['3']
+    - LIST.List
+  - - ['2']
+    - MAP.Map
+  - - ['1']
+    - MAP.Map
+  - - ['4']
+    - MAP.Map

@@ -1,0 +1,51 @@
+args:
+- - &id001 ['1']
+  - SET.Set
+next:
+  default:
+    next:
+      next:
+        default: null
+        specializations:
+        - - '0'
+          - fail
+          - [SET.Set]
+        - - '1'
+          - args:
+            - - *id001
+              - SET.Set
+            - - [key, '1']
+              - STRING.String
+            next:
+              action:
+              - 3469
+              - - - [rem, '1']
+                  - SET.Set
+                - - [key, '1']
+                  - STRING.String
+            function: hook_SET_remove
+            sort: SET.Set
+            occurrence: [rem, '1']
+          - [STRING.String, SET.Set]
+        isnull: true
+        sort: STRING.String
+        occurrence: [key, '1']
+      iterator: *id001
+      function: set_iterator_next
+      binding: [key, '1']
+      sort: STRING.String
+    function: set_iterator
+    collection: *id001
+    sort: SET.Set
+  specializations:
+  - - '0'
+    - action:
+      - 3468
+      - []
+    - []
+  bitwidth: 64
+  sort: MINT.MInt 64
+  occurrence: &id002 [size, '1']
+function: hook_SET_size_long
+sort: MINT.MInt 64
+occurrence: *id002

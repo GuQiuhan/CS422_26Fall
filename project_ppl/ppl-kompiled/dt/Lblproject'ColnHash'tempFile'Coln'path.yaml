@@ -1,0 +1,12 @@
+default: fail
+specializations:
+- - Lbl'Hash'tempFile{}
+  - action:
+    - 3400
+    - - - ['0', '1']
+        - STRING.String
+      - - ['1', '1']
+        - INT.Int
+  - [STRING.String, INT.Int]
+sort: STRING.String
+occurrence: ['1']

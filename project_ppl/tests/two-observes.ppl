@@ -1,0 +1,9 @@
+// Two observations: the second posterior refers to the first one.
+grid 100
+x ~ Uniform(0, 1)
+y ~ Uniform(0, 1)
+observe (x + y > 1)
+query mean(x)            // 2/3
+observe (x > y)
+query mean(x)            // E[x | x + y > 1, x > y] = 5/6 = 0.8333
+query prob(x > 0.5)      // 1

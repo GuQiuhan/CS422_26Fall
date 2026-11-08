@@ -1,0 +1,28 @@
+// Should succeed.  A string is thrown deep inside a recursive int function.
+// Every frame of f has an int handler, which must NOT catch it; the
+// exception propagates through all of them and out of the calls, up to the
+// string handler in g.  That handler must run with g's environment and
+// g's return type (string) restored, so "return s + ..." type checks.
+int f(int depth) {
+  try {
+    if (depth == 0) { throw "deep"; }
+    return f(depth - 1);
+  } catch(int x) {
+    print("Wrong: int handler\n");
+  }
+  return 0;
+}
+
+string g() {
+  string prefix = "caught ";
+  try {
+    f(3);
+  } catch(string s) {
+    return prefix + s;
+  }
+  return "Wrong: nothing caught";
+}
+
+void main() {
+  print(g(), "\n");
+}

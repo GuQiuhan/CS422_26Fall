@@ -1,0 +1,10 @@
+// Kernels refer to variables by NAME (Fig. 2: [[x := E]]p = sigma_p[x |-> [[E]]p]).
+// y's kernel is delta(x + 1) with dep {x}.  Reassigning x afterwards is
+// allowed by the assumption (the new kernel of x has no dependencies), but
+// it also changes the joint measure seen through y: E[y] becomes 3 + 1 = 4,
+// whereas in an ordinary (sampling) execution y would keep mean 0 + 1 = 1.
+x ~ Normal(0, 1)
+y := x + 1
+query mean(y)            // 1
+x := 3
+query mean(y)            // 4 under the kernel-based semantics

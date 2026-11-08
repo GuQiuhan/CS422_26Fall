@@ -1,0 +1,17 @@
+// Means of all supported distributions (parameterizations in README).
+a ~ Normal(1, 4)         // 1
+b ~ Uniform(1, 3)        // 2
+c ~ Laplace(1, 2)        // 1
+d ~ Logistic(-1, 1)      // -1
+e ~ Exponential(2)       // 0.5
+f ~ Gamma(2, 3)          // shape * scale = 6
+g ~ Pareto(1, 3)         // alpha * xm / (alpha - 1) = 1.5
+h ~ Student-t(5)         // 0
+query mean(a)
+query mean(b)
+query mean(c)
+query mean(d)
+query mean(e)
+query mean(f)
+query mean(g)
+query mean(h)

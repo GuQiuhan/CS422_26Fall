@@ -1,0 +1,32 @@
+<T>
+  <k>
+    .K
+  </k>
+  <pstate>
+    x |-> ker ( .Set , cond ( 1 , x ) )
+    y |-> ker ( SetItem ( x ) , cond ( 1 , y ) )
+  </pstate>
+  <order>
+    ListItem ( x )
+    ListItem ( y )
+  </order>
+  <snapshots>
+    0 |-> snap ( x |-> ker ( .Set , sample ( Uniform , 0 , 1 , .Exps ) )
+    y |-> ker ( .Set , sample ( Uniform , 0 , 1 , .Exps ) ) , ListItem ( x )
+    ListItem ( y ) , x + y > 1 )
+    1 |-> snap ( x |-> ker ( .Set , cond ( 0 , x ) )
+    y |-> ker ( SetItem ( x ) , cond ( 0 , y ) ) , ListItem ( x )
+    ListItem ( y ) , x > y )
+  </snapshots>
+  <nextSnapshot>
+    2
+  </nextSnapshot>
+  <grid>
+    100
+  </grid>
+  <results>
+    ListItem ( Ex ( x ) = 0.66833333333333378e0 )
+    ListItem ( Ex ( x ) = 0.83499999999999996e0 )
+    ListItem ( Pr ( x > 0.50000000000000000e0 ) = 0.99999999999999989e0 )
+  </results>
+</T>

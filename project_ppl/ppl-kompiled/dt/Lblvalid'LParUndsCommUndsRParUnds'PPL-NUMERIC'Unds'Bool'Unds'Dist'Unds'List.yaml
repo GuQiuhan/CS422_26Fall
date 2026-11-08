@@ -1,0 +1,256 @@
+args:
+- - &id001 ['2']
+  - LIST.List
+next:
+  default:
+    args:
+    - - *id001
+      - LIST.List
+    - - [lit, '1', MINT.MInt 64]
+      - MINT.MInt 64
+    next:
+      args:
+      - - *id001
+        - LIST.List
+      - - [lit, '0', MINT.MInt 64]
+        - MINT.MInt 64
+      next: &id002
+        action:
+        - 3484
+        - - - &id004 ['1']
+            - STRING.String
+          - - *id001
+            - LIST.List
+      function: hook_LIST_get_long
+      sort: STRING.String
+      occurrence: ['0', '2']
+    function: hook_LIST_get_long
+    sort: STRING.String
+    occurrence: ['1', '2']
+  specializations:
+  - - '0'
+    - *id002
+    - []
+  - - '1'
+    - args:
+      - - *id001
+        - LIST.List
+      - - [lit, '0', MINT.MInt 64]
+        - MINT.MInt 64
+      next:
+        default: *id002
+        specializations:
+        - - inj{SortFloat{}, SortKItem{}}
+          - default: *id002
+            specializations:
+            - - LblExponential'Unds'PPL-SYNTAX'Unds'Dist{}
+              - args:
+                - - *id001
+                  - LIST.List
+                - - [lit, '1', MINT.MInt 64]
+                  - MINT.MInt 64
+                - - [lit, '0', MINT.MInt 64]
+                  - MINT.MInt 64
+                next:
+                  action:
+                  - 3485
+                  - - - &id003 ['0', '0', '2']
+                      - FLOAT.Float
+                function: hook_LIST_range_long
+                sort: LIST.List
+                occurrence: ['1', '2']
+              - []
+            - - LblStudent-t'Unds'PPL-SYNTAX'Unds'Dist{}
+              - args:
+                - - *id001
+                  - LIST.List
+                - - [lit, '1', MINT.MInt 64]
+                  - MINT.MInt 64
+                - - [lit, '0', MINT.MInt 64]
+                  - MINT.MInt 64
+                next:
+                  action:
+                  - 3491
+                  - - - *id003
+                      - FLOAT.Float
+                function: hook_LIST_range_long
+                sort: LIST.List
+                occurrence: ['1', '2']
+              - []
+            sort: STRING.String
+            occurrence: *id004
+          - [FLOAT.Float]
+        sort: STRING.String
+        occurrence: ['0', '2']
+      function: hook_LIST_get_long
+      sort: STRING.String
+      occurrence: ['0', '2']
+    - [STRING.String]
+  - - '2'
+    - args:
+      - - *id001
+        - LIST.List
+      - - [lit, '1', MINT.MInt 64]
+        - MINT.MInt 64
+      next:
+        args:
+        - - *id001
+          - LIST.List
+        - - [lit, '0', MINT.MInt 64]
+          - MINT.MInt 64
+        next:
+          default: *id002
+          specializations:
+          - - inj{SortFloat{}, SortKItem{}}
+            - default: *id002
+              specializations:
+              - - LblGamma'Unds'PPL-SYNTAX'Unds'Dist{}
+                - default: *id002
+                  specializations:
+                  - - inj{SortFloat{}, SortKItem{}}
+                    - args:
+                      - - *id001
+                        - LIST.List
+                      - - [lit, '2', MINT.MInt 64]
+                        - MINT.MInt 64
+                      - - [lit, '0', MINT.MInt 64]
+                        - MINT.MInt 64
+                      next:
+                        action:
+                        - 3486
+                        - - - ['0', '0', '2']
+                            - FLOAT.Float
+                          - - &id006 ['0', '1', '2']
+                            - FLOAT.Float
+                      function: hook_LIST_range_long
+                      sort: LIST.List
+                      occurrence: ['2', '2']
+                    - [FLOAT.Float]
+                  sort: STRING.String
+                  occurrence: &id005 ['0', '2']
+                - []
+              - - LblLaplace'Unds'PPL-SYNTAX'Unds'Dist{}
+                - args:
+                  - - *id001
+                    - LIST.List
+                  - - [lit, '2', MINT.MInt 64]
+                    - MINT.MInt 64
+                  - - [lit, '0', MINT.MInt 64]
+                    - MINT.MInt 64
+                  next:
+                    action:
+                    - 3487
+                    - - - *id005
+                        - STRING.String
+                      - - *id006
+                        - FLOAT.Float
+                  function: hook_LIST_range_long
+                  sort: LIST.List
+                  occurrence: ['2', '2']
+                - []
+              - - LblLogistic'Unds'PPL-SYNTAX'Unds'Dist{}
+                - args:
+                  - - *id001
+                    - LIST.List
+                  - - [lit, '2', MINT.MInt 64]
+                    - MINT.MInt 64
+                  - - [lit, '0', MINT.MInt 64]
+                    - MINT.MInt 64
+                  next:
+                    action:
+                    - 3488
+                    - - - *id005
+                        - STRING.String
+                      - - *id006
+                        - FLOAT.Float
+                  function: hook_LIST_range_long
+                  sort: LIST.List
+                  occurrence: ['2', '2']
+                - []
+              - - LblNormal'Unds'PPL-SYNTAX'Unds'Dist{}
+                - args:
+                  - - *id001
+                    - LIST.List
+                  - - [lit, '2', MINT.MInt 64]
+                    - MINT.MInt 64
+                  - - [lit, '0', MINT.MInt 64]
+                    - MINT.MInt 64
+                  next:
+                    action:
+                    - 3489
+                    - - - *id005
+                        - STRING.String
+                      - - *id006
+                        - FLOAT.Float
+                  function: hook_LIST_range_long
+                  sort: LIST.List
+                  occurrence: ['2', '2']
+                - []
+              - - LblPareto'Unds'PPL-SYNTAX'Unds'Dist{}
+                - default: *id002
+                  specializations:
+                  - - inj{SortFloat{}, SortKItem{}}
+                    - args:
+                      - - *id001
+                        - LIST.List
+                      - - [lit, '2', MINT.MInt 64]
+                        - MINT.MInt 64
+                      - - [lit, '0', MINT.MInt 64]
+                        - MINT.MInt 64
+                      next:
+                        action:
+                        - 3490
+                        - - - *id006
+                            - FLOAT.Float
+                          - - ['0', '0', '2']
+                            - FLOAT.Float
+                      function: hook_LIST_range_long
+                      sort: LIST.List
+                      occurrence: ['2', '2']
+                    - [FLOAT.Float]
+                  sort: STRING.String
+                  occurrence: *id005
+                - []
+              - - LblUniform'Unds'PPL-SYNTAX'Unds'Dist{}
+                - default: *id002
+                  specializations:
+                  - - inj{SortFloat{}, SortKItem{}}
+                    - args:
+                      - - *id001
+                        - LIST.List
+                      - - [lit, '2', MINT.MInt 64]
+                        - MINT.MInt 64
+                      - - [lit, '0', MINT.MInt 64]
+                        - MINT.MInt 64
+                      next:
+                        action:
+                        - 3492
+                        - - - ['0', '0', '2']
+                            - FLOAT.Float
+                          - - *id006
+                            - FLOAT.Float
+                      function: hook_LIST_range_long
+                      sort: LIST.List
+                      occurrence: ['2', '2']
+                    - [FLOAT.Float]
+                  sort: STRING.String
+                  occurrence: *id005
+                - []
+              sort: STRING.String
+              occurrence: *id004
+            - [FLOAT.Float]
+          sort: STRING.String
+          occurrence: ['1', '2']
+        function: hook_LIST_get_long
+        sort: STRING.String
+        occurrence: ['0', '2']
+      function: hook_LIST_get_long
+      sort: STRING.String
+      occurrence: ['1', '2']
+    - [STRING.String, STRING.String]
+  bitwidth: 64
+  sort: MINT.MInt 64
+  occurrence: &id007 [size, '2']
+function: hook_LIST_size_long
+sort: MINT.MInt 64
+occurrence: *id007
